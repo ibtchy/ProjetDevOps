@@ -5,6 +5,7 @@ import java.util.List;
 import tn.esprit.spring.entities.Produit;
 
 
+
 public interface IProduitService {
 
 	List<Produit> retrieveAllProduits();
