@@ -1,4 +1,4 @@
-package com.esprit.examen.services;
+package tn.esprit.spring.services;
 
 import java.util.Date;
 import java.util.List;
@@ -6,17 +6,14 @@ import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.esprit.examen.entities.DetailFacture;
-import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Fournisseur;
-import com.esprit.examen.entities.Operateur;
-import com.esprit.examen.entities.Produit;
-import com.esprit.examen.repositories.DetailFactureRepository;
-import com.esprit.examen.repositories.FactureRepository;
-import com.esprit.examen.repositories.FournisseurRepository;
-import com.esprit.examen.repositories.OperateurRepository;
-import com.esprit.examen.repositories.ProduitRepository;
+
 import lombok.extern.slf4j.Slf4j;
+import tn.esprit.repositories.DetailFactureRepository;
+import tn.esprit.repositories.FactureRepository;
+import tn.esprit.repositories.ProduitRepository;
+import tn.esprit.spring.entities.DetailFacture;
+import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.entities.Produit;
 
 @Service
 @Slf4j
