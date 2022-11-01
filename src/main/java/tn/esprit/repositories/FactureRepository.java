@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.entities.Fournisseur;
 
 @Repository
 public interface FactureRepository extends JpaRepository<Facture, Long> {
