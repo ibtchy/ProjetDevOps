@@ -1,22 +1,24 @@
-package com.esprit.examen.services;
+package tn.esprit.spring.services;
 
 import java.util.Date;
+
 import java.util.List;
 import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.esprit.examen.entities.DetailFacture;
-import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Fournisseur;
-import com.esprit.examen.entities.Operateur;
-import com.esprit.examen.entities.Produit;
-import com.esprit.examen.repositories.DetailFactureRepository;
-import com.esprit.examen.repositories.FactureRepository;
-import com.esprit.examen.repositories.FournisseurRepository;
-import com.esprit.examen.repositories.OperateurRepository;
-import com.esprit.examen.repositories.ProduitRepository;
+
 import lombok.extern.slf4j.Slf4j;
+import tn.esprit.repositories.DetailFactureRepository;
+import tn.esprit.repositories.FactureRepository;
+import tn.esprit.repositories.FournisseurRepository;
+import tn.esprit.repositories.OperateurRepository;
+import tn.esprit.repositories.ProduitRepository;
+import tn.esprit.spring.entities.DetailFacture;
+import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.entities.Fournisseur;
+import tn.esprit.spring.entities.Operateur;
+import tn.esprit.spring.entities.Produit;
 
 @Service
 @Slf4j
@@ -59,18 +61,18 @@ public class FactureServiceImpl implements IFactureService {
 		float montantRemise = 0;
 		for (DetailFacture detail : detailsFacture) {
 			//Récuperer le produit 
-			Produit produit = produitRepository.findById(detail.getProduit().getIdProduit()).get();
+		//	Produit produit = produitRepository.findById(detail.getProduit().getIdProduit()).get();
 			//Calculer le montant total pour chaque détail Facture
-			float prixTotalDetail = detail.getQteCommandee() * produit.getPrix();
+			//float prixTotalDetail = detail.getQteCommandee() * produit.getPrix();
 			//Calculer le montant remise pour chaque détail Facture
-			float montantRemiseDetail = (prixTotalDetail * detail.getPourcentageRemise()) / 100;
-			float prixTotalDetailRemise = prixTotalDetail - montantRemiseDetail;
-			detail.setMontantRemise(montantRemiseDetail);
-			detail.setPrixTotalDetail(prixTotalDetailRemise);
+			//float montantRemiseDetail = (prixTotalDetail * detail.getPourcentageRemise()) / 100;
+			//float prixTotalDetailRemise = prixTotalDetail - montantRemiseDetail;
+			//detail.setMontantRemise(montantRemiseDetail);
+			//detail.setPrixTotalDetail(prixTotalDetailRemise);
 			//Calculer le montant total pour la facture
-			montantFacture = montantFacture + prixTotalDetailRemise;
+			//montantFacture = montantFacture + prixTotalDetailRemise;
 			//Calculer le montant remise pour la facture
-			montantRemise = montantRemise + montantRemiseDetail;
+			//montantRemise = montantRemise + montantRemiseDetail;
 			detailFactureRepository.save(detail);
 		}
 		f.setMontantFacture(montantFacture);
