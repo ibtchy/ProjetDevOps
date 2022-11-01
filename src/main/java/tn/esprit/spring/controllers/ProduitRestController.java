@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Produit;
+import tn.esprit.spring.services.IProduitService;
 
 
 @RestController
