@@ -1,8 +1,12 @@
-package com.esprit.examen.repositories;
+package tn.esprit.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.esprit.examen.entities.DetailFacture;
+
+import tn.esprit.spring.entities.DetailFacture;
+
+
+
 
 @Repository
 public interface DetailFactureRepository extends JpaRepository<DetailFacture, Long> {

@@ -1,4 +1,4 @@
-package com.esprit.examen.repositories;
+package tn.esprit.repositories;
 
 import java.util.Date;
 import java.util.List;
@@ -8,8 +8,10 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Fournisseur;
+
+
+
+import tn.esprit.spring.entities.*;
 
 @Repository
 public interface FactureRepository extends JpaRepository<Facture, Long> {

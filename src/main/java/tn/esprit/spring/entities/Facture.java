@@ -1,4 +1,4 @@
-package com.esprit.examen.entities;
+package tn.esprit.spring.entities;
 
 import java.io.Serializable;
 import java.util.Date;

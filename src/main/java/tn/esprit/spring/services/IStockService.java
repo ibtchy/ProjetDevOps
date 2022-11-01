@@ -7,7 +7,7 @@ import tn.esprit.spring.entities.Stock;
 
 public interface IStockService {
 
-	List<Stock> retrieveAllStocks();
+	//List<Stock> retrieveAllStocks();
 
 	Stock addStock(Stock s);
 
@@ -17,5 +17,5 @@ public interface IStockService {
 
 	Stock retrieveStock(Long id);
 
-	String retrieveStatusStock();
+	//String retrieveStatusStock();
 }
