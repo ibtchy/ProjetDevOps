@@ -11,6 +11,7 @@ pository;
 import lombok.extern.slf4j.Slf4j;
 import tn.esprit.repositories.CategorieProduitRepository;
 import tn.esprit.repositories.ProduitRepository;
+import tn.esprit.repositories.StockRepository;
 import tn.esprit.spring.entities.Produit;
 
 @Service
