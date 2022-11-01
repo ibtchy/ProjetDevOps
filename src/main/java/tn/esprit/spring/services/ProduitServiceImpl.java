@@ -7,11 +7,13 @@ import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-pository;
+
 import lombok.extern.slf4j.Slf4j;
 import tn.esprit.repositories.CategorieProduitRepository;
 import tn.esprit.repositories.ProduitRepository;
+import tn.esprit.repositories.StockRepository;
 import tn.esprit.spring.entities.Produit;
+import tn.esprit.spring.entities.Stock;
 
 @Service
 @Slf4j
@@ -28,7 +30,7 @@ public class ProduitServiceImpl implements IProduitService {
 	public List<Produit> retrieveAllProduits() {
 		List<Produit> produits = (List<Produit>) produitRepository.findAll();
 		for (Produit produit : produits) {
-			log.info(" Produit : " + produit);
+			//log.info(" Produit : " + produit);
 		}
 		return produits;
 	}
@@ -54,18 +56,18 @@ public class ProduitServiceImpl implements IProduitService {
 	@Override
 	public Produit retrieveProduit(Long produitId) {
 		Produit produit = produitRepository.findById(produitId).orElse(null);
-		log.info("produit :" + produit);
+		//log.info("produit :" + produit);
 		return produit;
 	}
 
-	@Override
-	public void assignProduitToStock(Long idProduit, Long idStock) {
-		Produit produit = produitRepository.findById(idProduit).orElse(null);
-		Stock stock = stockRepository.findById(idStock).orElse(null);
-		produit.setStock(stock);
-		produitRepository.save(produit);
-
-	}
+//	@Override
+//	public void assignProduitToStock(Long idProduit, Long idStock) {
+//		Produit produit = produitRepository.findById(idProduit).orElse(null);
+//		Stock stock = stockRepository.findById(idStock).orElse(null);
+//		produit.setStock(stock);
+//		produitRepository.save(produit);
+//
+//	}
 
 
 }

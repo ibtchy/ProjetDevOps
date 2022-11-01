@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Produit;
+import tn.esprit.spring.services.IProduitService;
 
 
 @RestController
@@ -65,10 +66,10 @@ public class ProduitRestController {
 	 * le faire en l'affectant au stock en question
 	 */
 	// http://localhost:8089/SpringMVC/produit/assignProduitToStock/1/5
-	@PutMapping(value = "/assignProduitToStock/{idProduit}/{idStock}")
-	public void assignProduitToStock(@PathVariable("idProduit") Long idProduit, @PathVariable("idStock") Long idStock) {
-		produitService.assignProduitToStock(idProduit, idStock);
-	}
+//	@PutMapping(value = "/assignProduitToStock/{idProduit}/{idStock}")
+//	public void assignProduitToStock(@PathVariable("idProduit") Long idProduit, @PathVariable("idStock") Long idStock) {
+//		produitService.assignProduitToStock(idProduit, idStock);
+//	}
 
 	/*
 	 * Revenu Brut d'un produit (qte * prix unitaire de toutes les lignes du
