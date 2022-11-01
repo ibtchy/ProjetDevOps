@@ -1,1 +1,25 @@
 
+pipeline {
+    agent any
+    
+   
+    stages {
+        stage('Checkout GIT') {
+            steps {
+                echo 'Pulling'
+               git branch: 'salma', credentialsId: 'jenkinks_cred', url: 'https://github.com/ibtchy/ProjetDevOps.git'
+            }
+        }
+        stage ('version mvn'){
+            steps {
+                 sh 'mvn -version'
+            }
+        }
+         stage ('build mvn'){
+            steps {
+                 sh 'mvn compile -e'
+            }
+        }
+       
+    }
+}
