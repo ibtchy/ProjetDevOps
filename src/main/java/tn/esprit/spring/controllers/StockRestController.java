@@ -24,12 +24,12 @@ public class StockRestController {
 	IStockService stockService;
 
 	// http://localhost:8089/SpringMVC/stock/retrieve-all-stocks
-	@GetMapping("/retrieve-all-stocks")
-	@ResponseBody
-	public List<Stock> getStocks() {
-		List<Stock> list = stockService.retrieveAllStocks();
-		return list;
-	}
+//	@GetMapping("/retrieve-all-stocks")
+//	@ResponseBody
+//	public List<Stock> getStocks() {
+//		List<Stock> list = stockService.retrieveAllStocks();
+//		return list;
+//	}
 
 	// http://localhost:8089/SpringMVC/stock/retrieve-stock/8
 	@GetMapping("/retrieve-stock/{stock-id}")

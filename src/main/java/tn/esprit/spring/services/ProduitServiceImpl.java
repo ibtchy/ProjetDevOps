@@ -7,7 +7,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-pository;
+
 import lombok.extern.slf4j.Slf4j;
 import tn.esprit.repositories.CategorieProduitRepository;
 import tn.esprit.repositories.ProduitRepository;
@@ -60,14 +60,14 @@ public class ProduitServiceImpl implements IProduitService {
 		return produit;
 	}
 
-	@Override
-	public void assignProduitToStock(Long idProduit, Long idStock) {
-		Produit produit = produitRepository.findById(idProduit).orElse(null);
-		Stock stock = stockRepository.findById(idStock).orElse(null);
-		produit.setStock(stock);
-		produitRepository.save(produit);
-
-	}
+//	@Override
+//	public void assignProduitToStock(Long idProduit, Long idStock) {
+//		Produit produit = produitRepository.findById(idProduit).orElse(null);
+//		Stock stock = stockRepository.findById(idStock).orElse(null);
+//		produit.setStock(stock);
+//		produitRepository.save(produit);
+//
+//	}
 
 
 }
