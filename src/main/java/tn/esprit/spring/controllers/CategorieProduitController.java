@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.CategorieProduit;
+import tn.esprit.spring.services.ICategorieProduitService;
 
 @RestController
 @Api(tags = "Gestion des categories Produit")
