@@ -1,10 +1,11 @@
-package com.esprit.examen.services;
+package tn.esprit.spring.services;
 
 import java.util.Date;
 import java.util.List;
 
-import com.esprit.examen.entities.Reglement;
+import tn.esprit.spring.entities.Reglement;
 
+ 
 public interface IReglementService {
 
 	List<Reglement> retrieveAllReglements();
