@@ -43,10 +43,10 @@ public class Produit implements Serializable {
 	@JsonIgnore
 	private Stock stock;
 	@OneToMany(mappedBy = "produit")
-//	@JsonIgnore
-//	private Set<DetailFacture> detailFacture;
-//	@ManyToOne
-//	@JsonIgnore
+	@JsonIgnore
+	private Set<DetailFacture> detailFacture;
+	@ManyToOne
+	@JsonIgnore
 	private CategorieProduit categorieProduit;
 	
 
