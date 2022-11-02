@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout GIT') {
+            steps {
+                echo 'Pulling'
+                git branch: 'ibtiProduit',
+                credentialsId: 'jenkins_cred',
+                url: 'https://github.com/ibtchy/ProjetDevOps.git';
+                
+            }
+        }
+         stage('Maven Version'){
+            steps {
+                sh 'mvn -version'
+            }
+        }
+        
+        stage('compile'){
+            steps {
+                sh 'mvn compile -e'
+            }
+        }
+        stage('package'){
+            steps {
+                sh 'mvn clean package -DskipTests'
+            }
+        } 
+       
+           
+        
+        
+        
+        
+    }
+}
