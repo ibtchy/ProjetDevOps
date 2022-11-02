@@ -13,6 +13,8 @@
  	import lombok.extern.slf4j.Slf4j;
 import tn.esprit.repositories.DetailFournisseurRepository;
 import tn.esprit.repositories.FournisseurRepository;
+import tn.esprit.repositories.ProduitRepository;
+import tn.esprit.repositories.SecteurActiviteRepository;
 import tn.esprit.spring.entities.DetailFournisseur;
 import tn.esprit.spring.entities.Fournisseur;
 
@@ -33,7 +35,7 @@ import tn.esprit.spring.entities.Fournisseur;
  		public List<Fournisseur> retrieveAllFournisseurs() {
  			List<Fournisseur> fournisseurs = (List<Fournisseur>) fournisseurRepository.findAll();
  			for (Fournisseur fournisseur : fournisseurs) {
- 				log.info(" fournisseur : " + fournisseur);
+ 				//log.info(" fournisseur : " + fournisseur);
  			}
  			return fournisseurs;
  		}
@@ -41,22 +43,23 @@ import tn.esprit.spring.entities.Fournisseur;
 
  		public Fournisseur addFournisseur(Fournisseur f /*Master*/) {
  			DetailFournisseur df= new DetailFournisseur();//Slave
- 			df.setDateDebutCollaboration(new Date()); //util
+ 			//df.setDateDebutCollaboration(new Date()); //util
  			//On affecte le "Slave" au "Master"
- 			f.setDetailFournisseur(df);	
+ 		//	f.setDetailFournisseur(df);	
  			fournisseurRepository.save(f);
  			return f;
  		}
  		
  		private DetailFournisseur  saveDetailFournisseur(Fournisseur f){
- 			DetailFournisseur df = f.getDetailFournisseur();
- 			detailFournisseurRepository.save(df);
- 			return df;
+			return null;
+ 		//	DetailFournisseur df = f.getDetailFournisseur();
+ 		//	detailFournisseurRepository.save(df);
+ 		//	return df;
  		}
 
  		public Fournisseur updateFournisseur(Fournisseur f) {
  			DetailFournisseur df = saveDetailFournisseur(f);
- 			f.setDetailFournisseur(df);	
+ 		//	f.setDetailFournisseur(df);	
  			fournisseurRepository.save(f);
  			return f;
  		}
@@ -77,8 +80,8 @@ import tn.esprit.spring.entities.Fournisseur;
  		@Override
  		public void assignSecteurActiviteToFournisseur(Long idSecteurActivite, Long idFournisseur) {
  			Fournisseur fournisseur = fournisseurRepository.findById(idFournisseur).orElse(null);
- 			SecteurActivite secteurActivite = secteurActiviteRepository.findById(idSecteurActivite).orElse(null);
- 	        fournisseur.getSecteurActivites().add(secteurActivite);
+ 		//	SecteurActivite secteurActivite = secteurActiviteRepository.findById(idSecteurActivite).orElse(null);
+ 	      //  fournisseur.getSecteurActivites().add(secteurActivite);
  	        fournisseurRepository.save(fournisseur);
  			
  			

@@ -1,4 +1,4 @@
-package com.esprit.examen.controllers;
+package tn.esprit.spring.controllers;
 
 import java.util.Date;
 import java.util.List;
@@ -6,10 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
-import com.esprit.examen.entities.Facture;
-import com.esprit.examen.services.IFactureService;
+ 
 
 import io.swagger.annotations.Api;
+import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.services.IFactureService;
 
 
 @RestController
