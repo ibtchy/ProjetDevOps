@@ -30,44 +30,8 @@ public class DetailFacture implements Serializable{
 	@Temporal(TemporalType.DATE)
 	private Date dateDebutCollaboration;
 	private String adresse;
-	public Long getIdDetailFournisseur() {
-		return idDetailFournisseur;
-	}
-	public void setIdDetailFournisseur(Long idDetailFournisseur) {
-		this.idDetailFournisseur = idDetailFournisseur;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public Date getDateDebutCollaboration() {
-		return dateDebutCollaboration;
-	}
-	public void setDateDebutCollaboration(Date dateDebutCollaboration) {
-		this.dateDebutCollaboration = dateDebutCollaboration;
-	}
-	public String getAdresse() {
-		return adresse;
-	}
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
-	}
-	public String getMatricule() {
-		return matricule;
-	}
-	public void setMatricule(String matricule) {
-		this.matricule = matricule;
-	}
 	public Fournisseur getFournisseur() {
 		return fournisseur;
-	}
-	public void setFournisseur(Fournisseur fournisseur) {
-		this.fournisseur = fournisseur;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 	private String matricule;
 	@OneToOne(mappedBy="detailFournisseur")
