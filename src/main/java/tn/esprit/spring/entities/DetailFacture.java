@@ -1,4 +1,4 @@
-package com.esprit.examen.entities;
+package tn.esprit.spring.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -20,7 +20,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DetailFournisseur implements Serializable{
+public class DetailFacture implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

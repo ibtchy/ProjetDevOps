@@ -1,8 +1,10 @@
-package com.esprit.examen.services;
+package tn.esprit.spring.services;
 
 import java.util.Date;
 import java.util.List;
-import com.esprit.examen.entities.Facture;
+
+import tn.esprit.spring.entities.Facture;
+
 
 public interface IFactureService {
 	List<Facture> retrieveAllFactures();
