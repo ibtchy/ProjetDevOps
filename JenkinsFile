@@ -1,0 +1,28 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout GIT') {
+            steps {
+                echo 'Pulling'
+               git branch: 'oussamabouguerra', credentialsId: 'jenkinsscred', url: 'https://github.com/ibtchy/ProjetDevOps.git'
+                
+            }
+        }
+         stage('Maven Version'){
+            steps {
+                sh 'mvn -version'
+            }
+        }
+        
+       
+         
+       
+           
+        
+        
+        
+        
+    }
+}
