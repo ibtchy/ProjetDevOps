@@ -13,6 +13,7 @@ import tn.esprit.repositories.CategorieProduitRepository;
 import tn.esprit.repositories.ProduitRepository;
 import tn.esprit.repositories.StockRepository;
 import tn.esprit.spring.entities.Produit;
+import tn.esprit.spring.entities.Stock;
 
 
 @Service
@@ -60,14 +61,14 @@ public class ProduitServiceImpl implements IProduitService {
 		return produit;
 	}
 
-//	@Override
-//	public void assignProduitToStock(Long idProduit, Long idStock) {
-//		Produit produit = produitRepository.findById(idProduit).orElse(null);
-//		Stock stock = stockRepository.findById(idStock).orElse(null);
-//		produit.setStock(stock);
-//		produitRepository.save(produit);
-//
-//	}
+	@Override
+	public void assignProduitToStock(Long idProduit, Long idStock) {
+		Produit produit = produitRepository.findById(idProduit).orElse(null);
+		Stock stock = stockRepository.findById(idStock).orElse(null);
+		produit.setStock(stock);
+		produitRepository.save(produit);
+
+	}
 
 
 }
