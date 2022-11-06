@@ -3,16 +3,14 @@ package tn.esprit.spring.services;
 import java.util.Date;
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.repositories.DetailFournisseurRepository;
-import tn.esprit.repositories.FournisseurRepository;
-import tn.esprit.repositories.ProduitRepository;
-import tn.esprit.repositories.SecteurActiviteRepository;
+import tn.esprit.spring.repositories.DetailFournisseurRepository;
+import tn.esprit.spring.repositories.FournisseurRepository;
+import tn.esprit.spring.repositories.ProduitRepository;
+import tn.esprit.spring.repositories.SecteurActiviteRepository;
 import tn.esprit.spring.entities.DetailFournisseur;
 import tn.esprit.spring.entities.Fournisseur;
 import tn.esprit.spring.entities.SecteurActivite;

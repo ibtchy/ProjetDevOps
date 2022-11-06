@@ -5,13 +5,12 @@ package tn.esprit.spring.services;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.repositories.StockRepository;
+import tn.esprit.spring.repositories.StockRepository;
 import tn.esprit.spring.entities.Stock;
 
 

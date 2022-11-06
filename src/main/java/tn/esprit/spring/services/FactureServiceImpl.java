@@ -2,22 +2,19 @@ package tn.esprit.spring.services;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.repositories.DetailFactureRepository;
-import tn.esprit.repositories.FactureRepository;
-import tn.esprit.repositories.FournisseurRepository;
-import tn.esprit.repositories.OperateurRepository;
-import tn.esprit.repositories.ProduitRepository;
-import tn.esprit.spring.entities.DetailFacture;
+import tn.esprit.spring.repositories.DetailFactureRepository;
+import tn.esprit.spring.repositories.FactureRepository;
+import tn.esprit.spring.repositories.FournisseurRepository;
+import tn.esprit.spring.repositories.OperateurRepository;
+import tn.esprit.spring.repositories.ProduitRepository;
 import tn.esprit.spring.entities.Facture;
 import tn.esprit.spring.entities.Fournisseur;
 import tn.esprit.spring.entities.Operateur;
-import tn.esprit.spring.entities.Produit;
 
 @Service
 @Slf4j

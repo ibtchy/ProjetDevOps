@@ -6,19 +6,20 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.repositories.CategorieProduitRepository;
+import tn.esprit.spring.repositories.CategorieProduitRepository;
 import tn.esprit.spring.entities.CategorieProduit;
 
 
 @Service
 public class CategorieProduitServiceImpl implements ICategorieProduitService {
 
-	
+
 	@Autowired
 	CategorieProduitRepository categorieProduitRepository;
+
 	@Override
 	public List<CategorieProduit> retrieveAllCategorieProduits() {
-		
+
 		return categorieProduitRepository.findAll();
 	}
 

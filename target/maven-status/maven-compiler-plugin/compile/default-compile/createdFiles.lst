@@ -1,9 +1,0 @@
-tn\esprit\spring\entities\DetailFacture.class
-tn\esprit\spring\entities\Operateur.class
-tn\esprit\spring\entities\SecteurActivite.class
-tn\esprit\spring\entities\Facture.class
-tn\esprit\spring\services\IFactureService.class
-tn\esprit\spring\entities\DetailFournisseur.class
-tn\esprit\spring\entities\Reglement.class
-tn\esprit\spring\entities\Fournisseur.class
-tn\esprit\spring\entities\CategorieFournisseur.class

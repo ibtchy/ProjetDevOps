@@ -28,45 +28,7 @@ public class Reglement implements Serializable{
 	private Long idReglement;
 	private float montantPaye;
 	private float montantRestant;
-	public Long getIdReglement() {
-		return idReglement;
-	}
-	public void setIdReglement(Long idReglement) {
-		this.idReglement = idReglement;
-	}
-	public float getMontantPaye() {
-		return montantPaye;
-	}
-	public void setMontantPaye(float montantPaye) {
-		this.montantPaye = montantPaye;
-	}
-	public float getMontantRestant() {
-		return montantRestant;
-	}
-	public void setMontantRestant(float montantRestant) {
-		this.montantRestant = montantRestant;
-	}
-	public Boolean getPayee() {
-		return payee;
-	}
-	public void setPayee(Boolean payee) {
-		this.payee = payee;
-	}
-	public Date getDateReglement() {
-		return dateReglement;
-	}
-	public void setDateReglement(Date dateReglement) {
-		this.dateReglement = dateReglement;
-	}
-	public Facture getFacture() {
-		return facture;
-	}
-	public void setFacture(Facture facture) {
-		this.facture = facture;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
+
 	private Boolean payee;
 	@Temporal(TemporalType.DATE)
 	private Date dateReglement;
