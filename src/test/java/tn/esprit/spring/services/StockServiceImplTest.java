@@ -50,7 +50,7 @@ class StockServiceImplTest {
     }
 
 
-    //comment
+    //comment mmmmm
     /*@Test
     void addStockTest() {
         Stock s = new Stock("epuise", 4 , 5);
