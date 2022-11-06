@@ -20,4 +20,6 @@ public interface IProduitService {
 
 	void assignProduitToStock(Long idProduit, Long idStock);
 
+	void deletePr(Produit pr);
+
 }

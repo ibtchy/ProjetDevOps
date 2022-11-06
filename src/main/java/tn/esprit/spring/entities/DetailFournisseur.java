@@ -1,5 +1,4 @@
 package tn.esprit.spring.entities;
-
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;

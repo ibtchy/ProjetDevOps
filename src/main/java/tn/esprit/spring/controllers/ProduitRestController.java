@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 
 import io.swagger.annotations.Api;
+import lombok.extern.slf4j.Slf4j;
+import tn.esprit.spring.ProduitServiceImplTests;
 import tn.esprit.spring.entities.Produit;
 import tn.esprit.spring.services.IProduitService;
 
@@ -18,6 +20,7 @@ import tn.esprit.spring.services.IProduitService;
 @CrossOrigin("*")
 @Api(tags = "Gestion des produits")
 @RequestMapping("/produit")
+@Slf4j
 public class ProduitRestController {
 
 	@Autowired
@@ -28,7 +31,9 @@ public class ProduitRestController {
 	@ResponseBody
 	public List<Produit> getProduits() {
 		List<Produit> list = produitService.retrieveAllProduits();
+		
 		return list;
+		
 	}
 
 	// http://localhost:8089/SpringMVC/produit/retrieve-produit/8

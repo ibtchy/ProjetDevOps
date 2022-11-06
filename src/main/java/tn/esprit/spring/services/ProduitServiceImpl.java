@@ -17,6 +17,7 @@ import tn.esprit.spring.entities.Stock;
 
 @Service
 @Slf4j
+
 public class ProduitServiceImpl implements IProduitService {
 
 	@Autowired
@@ -30,7 +31,8 @@ public class ProduitServiceImpl implements IProduitService {
 	public List<Produit> retrieveAllProduits() {
 		List<Produit> produits = (List<Produit>) produitRepository.findAll();
 		for (Produit produit : produits) {
-			//log.info(" Produit : " + produit);
+			log.info(" Produit : " + produit);
+			//System.out.println(" Produit : " + produit);
 		}
 		return produits;
 	}
@@ -46,6 +48,10 @@ public class ProduitServiceImpl implements IProduitService {
 	@Override
 	public void deleteProduit(Long produitId) {
 		produitRepository.deleteById(produitId);
+	}
+	@Override
+	public void deletePr(Produit pr) {
+		produitRepository.delete(pr);
 	}
 
 	@Override
