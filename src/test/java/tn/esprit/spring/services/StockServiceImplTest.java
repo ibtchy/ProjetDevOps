@@ -49,9 +49,7 @@ class StockServiceImplTest {
         Assertions.assertEquals(2, stockservice.retrieveAllStocks().size());
     }
 
-
-    //comment mmmmm
-    /*@Test
+    @Test
     void addStockTest() {
         Stock s = new Stock("epuise", 4 , 5);
         when(sr.save(s)).thenReturn(s);
@@ -64,5 +62,7 @@ class StockServiceImplTest {
         Stock s = new Stock("aaa", 66 , 55);
         stockservice.deleteStock(s);
         verify(sr, times(1)).delete(s);
-    }*/
+    }
+
+
 }
