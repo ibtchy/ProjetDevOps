@@ -2,8 +2,10 @@ package tn.esprit.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication(scanBasePackages={"com.service.something","com.service.application"})
+@EnableSwagger2
 
 public class ProjectAchatApplication {
 

@@ -22,15 +22,17 @@ public class StockServiceImpl implements IStockService {
 	StockRepository stockRepository;
 
 
+
+
 	@Override
 	public List<Stock> retrieveAllStocks() {
 		// récuperer la date à l'instant t1
-		log.info("In method retrieveAllStocks");
-		List<Stock> stocks = (List<Stock>) stockRepository.findAll();
-		for (Stock stock : stocks) {
+		//log.info("In method retrieveAllStocks");
+		List<Stock> stocks = stockRepository.findAll();
+		/*for (Stock stock : stocks) {
 			log.info(" Stock : " + stock);
-		}
-		log.info("out of method retrieveAllStocks");
+		}*/
+		System.out.println("getting data from db"+ stocks);
 		// récuperer la date à l'instant t2
 		// temps execution = t2 - t1
 		return stocks;
@@ -40,14 +42,33 @@ public class StockServiceImpl implements IStockService {
 	public Stock addStock(Stock s) {
 		// récuperer la date à l'instant t1
 		//Log.info("In method addStock");
+
 		return stockRepository.save(s);
 		
 	}
 
 	@Override
-	public void deleteStock(Long stockId) {
+	public Stock getStckByid(Long id) {
+		// récuperer la date à l'instant t1
+		//Log.info("In method addStock");
+
+		return stockRepository.getById(id);
+
+	}
+
+
+
+	@Override
+	public void deleteStockById(Long stockId) {
 		//log.info("In method deleteStock");
 		stockRepository.deleteById(stockId);
+
+	}
+
+	@Override
+	public void deleteStock(Stock s) {
+		//log.info("In method deleteStock");
+		stockRepository.delete(s);
 
 	}
 
