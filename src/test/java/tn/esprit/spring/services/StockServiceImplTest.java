@@ -49,6 +49,8 @@ class StockServiceImplTest {
         Assertions.assertEquals(2, stockservice.retrieveAllStocks().size());
     }
 
+
+    //comment
     /*@Test
     void addStockTest() {
         Stock s = new Stock("epuise", 4 , 5);
