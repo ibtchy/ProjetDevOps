@@ -46,7 +46,7 @@ class StockServiceImplTest {
 
         when(sr.findAll()).thenReturn(Stream
                 .of(new Stock("epuise", 4 , 5), new Stock("test",6,8)).collect(Collectors.toList()));
-        Assertions.assertEquals(1, stockservice.retrieveAllStocks().size());
+        Assertions.assertEquals(2, stockservice.retrieveAllStocks().size());
     }
 
     @Test
