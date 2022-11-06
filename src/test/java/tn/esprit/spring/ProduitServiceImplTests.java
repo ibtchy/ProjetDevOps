@@ -38,36 +38,24 @@ import tn.esprit.spring.services.ProduitServiceImpl;
 public class ProduitServiceImplTests {
 	@Mock
 	ProduitRepository produitRepo;
-	//ProduitRepository p = Mockito.mock(ProduitRepository.class);
+	
 	
 	@InjectMocks
 	ProduitServiceImpl produitService;
 	
 	
-	Produit pro = Produit.builder().codeProduit("3").libelleProduit("test").build();
 	
-	List<Produit> list = new ArrayList<Produit>() {
-		{
-		add(Produit.builder().codeProduit("2").libelleProduit("aqua").build());
-		add(Produit.builder().codeProduit("4").libelleProduit("pro").build());
-		}
-	};
 	
 	
 	@Test
     public void getProduitsTest() {
-       /* when(produitRepo.findAll()).thenReturn(Stream
-                .of(new Produit("tes","gfg",2), new Produit("tdf","aa",5)).collect(Collectors.toList()));
-        assertEquals(2, produitService.retrieveAllProduits().size());
-    	log.info(" Produit : " + produit);*/
-		Mockito.when(produitRepo.findAll()).thenReturn(list);
-		List<Produit> produits = produitService.retrieveAllProduits();
-		assertEquals(2, produitService.retrieveAllProduits().size());
-		for(Produit produit : produits){
-			log.info(produit.toString());
-			log.info("getting data frm db" + list);
+      
+		
+		when(produitRepo.findAll()).thenReturn(Stream
+                .of(new Produit("999", "Pranya", 33),  new Produit("999", "Pranya", 33)).collect(Collectors.toList()));
+        Assertions.assertEquals(2, produitService.retrieveAllProduits().size());
 		}
-    }
+    
 	
 	@Test
 	public void saveProduitTest() {
@@ -88,40 +76,6 @@ public class ProduitServiceImplTests {
 	
 	
 	
-	/*
 	
-	@Test
-	public void retreiveProduitTest(){
-		Mockito.when(produitRepo.findById(Mockito.anyLong())).thenReturn(Optional.of(pro));
-		Produit produit = produitService.retrieveProduit((long)2);
-		assertNotNull(produit);
-		log.info("get ==> " + produit.toString());
-		pro = produitRepo.save(pro);
-		log.info(pro.toString());
-		Assertions.assertNotNull(pro.getIdProduit());
-		
-	}
-	
-	@Test
-	public void retreiveAllProduitTest(){
-		Mockito.when(produitRepo.findAll()).thenReturn(list);
-		List<Produit> produits = produitService.retrieveAllProduits();
-		assertNotNull(produits);
-		for(Produit produit : produits){
-			log.info(produit.toString());
-		}
-	}
-	
-	@Test
-	public void addProduitTest(){
-		Mockito.when(produitRepo.save(Mockito.any(Produit.class))).then(invocation -> {
-			Produit model = invocation.getArgument( )
-		});
-	}
-	
-	
-	
-	
-	*/
 
 }
