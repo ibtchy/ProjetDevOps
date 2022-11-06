@@ -20,6 +20,12 @@ pipeline {
                  sh 'mvn compile -e'
             }
         }
+        
+        stage('Package') {
+        steps {
+        sh('mvnw clean package -DskipTests')
+         }
+        }
        
     }
 }
