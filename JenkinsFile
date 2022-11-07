@@ -27,11 +27,17 @@ pipeline {
          }
         }
         
-         stage('Sonar') {
-         steps {
-            sh('mvn package sonar:sonar -DskipTests')
-
-      }
-      }
+      stage('SonarQube analysis') {
+                  steps {
+                      withSonarQubeEnv('SonarQube') {
+                          sh "./gradlew sonarqube"
+                      }
+                  }
+              }
+              stage("Quality gate") {
+                  steps {
+                      waitForQualityGate abortPipeline: true
+                  }
+              }
     }
 }
