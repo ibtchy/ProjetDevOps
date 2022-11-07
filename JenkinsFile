@@ -21,19 +21,13 @@ pipeline {
             }
         }
         
-       /* stage('Package') {
+        stage('Package') {
         steps {
         sh('mvn clean package -DskipTests')
          }
-        }*/
-
-        stage("test"){
-        steps{
-            sh('mvn test')
-        }
         }
 
-        stage("scan"){
+        stage("SonarQube"){
         steps {
                 withSonarQubeEnv ( installationName: 'SonarQube'){
                 sh 'mvn sonar:sonar'
