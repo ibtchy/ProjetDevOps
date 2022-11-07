@@ -21,11 +21,11 @@ pipeline {
             }
         }
         
-        stage('Package') {
+       /* stage('Package') {
         steps {
         sh('mvn clean package -DskipTests')
          }
-        }
+        }*/
 
         stage("test"){
         steps{
