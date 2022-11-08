@@ -30,14 +30,17 @@ echo "compiling"
              
             steps {
                
-script {
 
-sh '  mvn sonar:sonar -Dsonar.sources=src/main/java -Dsonar.css.node=. -Dsonar.java.binaries=. -Dsonar.host.url=http://http://192.168.1.17:9000/ -Dsonar.login=admin   -Dsonar.password=sonar'
+
+sh 'mvn sonar:sonar \
+  -Dsonar.projectKey=cherif \
+  -Dsonar.host.url=http://192.168.1.17:9000 \
+  -Dsonar.login=84a2cbab2d13cac2ac9678cbaef2cad898f4c592'
 
  
 }
                
-            }
+            
         }
       
          
