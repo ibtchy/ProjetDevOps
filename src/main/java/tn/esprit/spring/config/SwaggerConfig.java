@@ -1,4 +1,4 @@
-package tn.esprit.spring.Config;
+package tn.esprit.spring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

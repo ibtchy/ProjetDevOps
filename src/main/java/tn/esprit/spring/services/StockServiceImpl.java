@@ -13,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import tn.esprit.spring.repositories.StockRepository;
 import tn.esprit.spring.entities.Stock;
 
+import static java.lang.System.currentTimeMillis;
+
 
 @Service
 @Slf4j
@@ -26,22 +28,18 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public List<Stock> retrieveAllStocks() {
-		// récuperer la date à l'instant t1
-		//log.info("In method retrieveAllStocks");
+
+
 		List<Stock> stocks = stockRepository.findAll();
-		/*for (Stock stock : stocks) {
-			log.info(" Stock : " + stock);
-		}*/
-		System.out.println("getting data from db"+ stocks);
-		// récuperer la date à l'instant t2
-		// temps execution = t2 - t1
+
+		log.info("getting data from db"+ stocks);
+
 		return stocks;
 	}
 
 	@Override
 	public Stock addStock(Stock s) {
-		// récuperer la date à l'instant t1
-		//Log.info("In method addStock");
+
 
 		return stockRepository.save(s);
 		
@@ -50,7 +48,7 @@ public class StockServiceImpl implements IStockService {
 	@Override
 	public Stock getStckByid(Long id) {
 		// récuperer la date à l'instant t1
-		//Log.info("In method addStock");
+
 
 		return stockRepository.getById(id);
 
@@ -60,34 +58,34 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public void deleteStockById(Long stockId) {
-		//log.info("In method deleteStock");
+
 		stockRepository.deleteById(stockId);
 
 	}
 
 	@Override
 	public void deleteStock(Stock s) {
-		//log.info("In method deleteStock");
+
 		stockRepository.delete(s);
 
 	}
 
 	@Override
 	public Stock updateStock(Stock s) {
-		//log.info("In method updateStock");
+
 		return stockRepository.save(s);
 	}
 
 	@Override
 	public Stock retrieveStock(Long stockId) {
-		long start = System.currentTimeMillis();
-		//log.info("In method retrieveStock");
-		Stock stock = stockRepository.findById(stockId).orElse(null);
-		//log.info("out of method retrieveStock");
-		 long elapsedTime = System.currentTimeMillis() - start;
-		//log.info("Method execution time: " + elapsedTime + " milliseconds.");
 
-		return stock;
+
+		return stockRepository.findById(stockId).orElse(null);
+
+
+
+
+
 	}
 
 	  @Override
@@ -97,12 +95,16 @@ public class StockServiceImpl implements IStockService {
 		String msgDate = sdf.format(now);
 		String finalMessage = "";
 		String newLine = System.getProperty("line.separator");
-		List<Stock> stocksEnRouge = (List<Stock>) stockRepository.retrieveStatusStock();
+		List<Stock> stocksEnRouge = stockRepository.retrieveStatusStock();
 		for (int i = 0; i < stocksEnRouge.size(); i++) {
 			finalMessage = newLine + finalMessage + msgDate + newLine + ": le stock "
 					+ stocksEnRouge.get(i).getLibelleStock() + " a une quantité de " + stocksEnRouge.get(i).getQte()
 					+ " inférieur à la quantité minimale a ne pas dépasser de " + stocksEnRouge.get(i).getQteMin()
 					+ newLine;
+
+
+
+
 
 		}
 		log.info(finalMessage);

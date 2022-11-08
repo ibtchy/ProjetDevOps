@@ -48,29 +48,6 @@ public class FactureServiceImpl implements IFactureService {
 	}
 
 
-	private Facture addDetailsFacture(Facture f, Set<DetailFacture> detailsFacture) {
-		float montantFacture = 0;
-		float montantRemise = 0;
-		for (DetailFacture detail : detailsFacture) {
-
-			Produit produit = produitRepository.findById(detail.getProduit().getIdProduit()).get();
-
-			float prixTotalDetail = detail.getQteCommandee() * produit.getPrix();
-
-			float montantRemiseDetail = (prixTotalDetail * detail.getPourcentageRemise()) / 100;
-			float prixTotalDetailRemise = prixTotalDetail - montantRemiseDetail;
-			detail.setMontantRemise(montantRemiseDetail);
-			detail.setPrixTotalDetail(prixTotalDetailRemise);
-
-			montantFacture = montantFacture + prixTotalDetailRemise;
-
-			montantRemise = montantRemise + montantRemiseDetail;
-			detailFactureRepository.save(detail);
-		}
-		f.setMontantFacture(montantFacture);
-		f.setMontantRemise(montantRemise);
-		return f;
-	}
 
 	@Override
 	public void cancelFacture(Long factureId) {
@@ -109,8 +86,8 @@ public class FactureServiceImpl implements IFactureService {
 	public float pourcentageRecouvrement(Date startDate, Date endDate) {
 		float totalFacturesEntreDeuxDates = factureRepository.getTotalFacturesEntreDeuxDates(startDate,endDate);
 		float totalRecouvrementEntreDeuxDates =reglementService.getChiffreAffaireEntreDeuxDate(startDate,endDate);
-		float pourcentage=(totalRecouvrementEntreDeuxDates/totalFacturesEntreDeuxDates)*100;
-		return pourcentage;
+		return (totalRecouvrementEntreDeuxDates/totalFacturesEntreDeuxDates)*100;
+
 	}
 	
 

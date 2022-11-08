@@ -42,7 +42,7 @@ class StockServiceImplTest {
 
 
     @Test
-    public void getStockTest() {
+     void getStockTest() {
 
         when(sr.findAll()).thenReturn(Stream
                 .of(new Stock("epuise", 4 , 5), new Stock("test",6,8)).collect(Collectors.toList()));
