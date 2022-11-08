@@ -22,7 +22,15 @@ pipeline {
             }
         }
          
-       
+       stage('sonar')
+       {
+         steps{
+         sh 'mvn sonar:sonar \
+  -Dsonar.projectKey=ouss \
+  -Dsonar.host.url=http://192.168.1.16:9000 \
+  -Dsonar.login=b09bb14037a90ad1a004db60a00e66b4a7b8edab'
+         }       
+       }
            
         
         
