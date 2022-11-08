@@ -27,6 +27,11 @@ pipeline {
          }
         }
 
+        stage ('test'){
+        steps{
+            sh('mvn test')
+        }
+        }
         stage("SonarQube"){
         steps {
                 withSonarQubeEnv ( installationName: 'SonarQube'){

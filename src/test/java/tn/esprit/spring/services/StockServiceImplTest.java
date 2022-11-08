@@ -28,9 +28,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 
-@Slf4j
-//@RunWith(SpringRunner.class)
-@ExtendWith(MockitoExtension.class)
+
+@RunWith(SpringRunner.class)
+//@ExtendWith(MockitoExtension.class)
 @SpringBootTest
 class StockServiceImplTest {
 
