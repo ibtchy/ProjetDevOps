@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout GIT') {
             steps {
                 echo 'Pulling'
-               git branch: 'main', credentialsId: 'Cred', url: 'https://github.com/ibtchy/ProjetDevOps.git'
+               git branch: 'medcheriflakhoua', credentialsId: 'Cred', url: 'https://github.com/ibtchy/ProjetDevOps.git'
                 
             }
         }
