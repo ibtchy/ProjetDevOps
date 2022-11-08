@@ -31,7 +31,12 @@ pipeline {
   -Dsonar.login=b09bb14037a90ad1a004db60a00e66b4a7b8edab'
          }       
        }
-           
+           stage('Test unitaire')
+       {
+         steps{
+         sh 'maven test -Dtest="tn.esprit.spring.OperateurServiceTest.java"'
+         }       
+       }   
         
         
         
