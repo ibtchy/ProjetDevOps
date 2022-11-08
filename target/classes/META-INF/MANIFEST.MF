@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Built-By: Lenovo
 Build-Jdk: 16.0.2
-Implementation-Title: ProjectAchat
+Implementation-Title: achat
 Implementation-Version: 1.0
-Implementation-Vendor-Id: tn.esprit.spring
-Implementation-URL: https://spring.io/projects/spring-boot/ProjectAchat
+Implementation-Vendor-Id: tn.esprit.rh
+Implementation-URL: https://spring.io/projects/spring-boot/achat
 Created-By: Maven Integration for Eclipse
 
