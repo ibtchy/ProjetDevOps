@@ -15,9 +15,14 @@ pipeline {
             }
         }
         
-        stage('compile'){
+        
+          stage('Compiling the artifact') {
+             
+             
             steps {
-                sh 'mvn compile -e'
+echo "compiling"
+                sh 'mvn compile'
+               
             }
         }
       
