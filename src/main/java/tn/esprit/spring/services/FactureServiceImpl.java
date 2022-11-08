@@ -120,5 +120,9 @@ public class FactureServiceImpl implements IFactureService {
 		return pourcentage;
 	}
 	
+	@Override
+	public void deleteFr(Facture fr) {
+		factureRepository.delete(fr);
+	}
 
 }
