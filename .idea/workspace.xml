@@ -6,29 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JenkinsFile" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/StockServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/Config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/Config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/CategorieProduitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/CategorieProduitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/FactureRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/FactureRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/FournisseurRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/FournisseurRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/OperateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/OperateurController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/ProduitRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/ProduitRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/ReglementRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/ReglementRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SecteurActiviteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SecteurActiviteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/StockRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/StockRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/DetailFacture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/DetailFacture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/CategorieProduitServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/CategorieProduitServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/FactureServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/FactureServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/FournisseurServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/FournisseurServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/OperateurServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/OperateurServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ProduitServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ProduitServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ReglementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ReglementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SecteurActiviteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SecteurActiviteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/StockServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/StockServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/services/StockServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/services/StockServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-07T19-03-22_586-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.services.StockServiceImplTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.services.StockServiceImplTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/services/StockServiceImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +108,11 @@
     <option name="myCommands">
       <command value="mvn compile" />
       <command value="mvn package" />
-      <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StockServiceImplTest">
+  <component name="RunManager" selected="Application.ProjectAchatApplication">
     <configuration name="ProjectAchatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.ProjectAchatApplication" />
       <module name="ProjectAchat" />
@@ -204,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StockServiceImplTest" />
         <item itemvalue="Application.ProjectAchatApplication" />
+        <item itemvalue="JUnit.StockServiceImplTest" />
         <item itemvalue="JUnit.StockServiceImplTest.getStockTest" />
         <item itemvalue="JUnit.StockServiceImplTest.deleteStockTest" />
         <item itemvalue="JUnit.StockServiceImplTest.retrieveStockTest" />
