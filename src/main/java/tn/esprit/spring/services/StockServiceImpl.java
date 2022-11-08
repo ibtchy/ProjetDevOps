@@ -53,16 +53,16 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public Stock updateStock(Stock s) {
-		//log.info("In method updateStock");
+		
 		return stockRepository.save(s);
 	}
 
 	@Override
 	public Stock retrieveStock(Long stockId) {
 		long start = System.currentTimeMillis();
-		//log.info("In method retrieveStock");
+	
 		Stock stock = stockRepository.findById(stockId).orElse(null);
-		//log.info("out of method retrieveStock");
+	
 		 long elapsedTime = System.currentTimeMillis() - start;
 		
 		return stock;
