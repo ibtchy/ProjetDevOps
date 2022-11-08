@@ -7,7 +7,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.spring.entities.SecteurActiviteDTO;
 import tn.esprit.spring.repositories.SecteurActiviteRepository;
 import tn.esprit.spring.entities.SecteurActivite;
 
@@ -23,7 +22,7 @@ public class SecteurActiviteServiceImpl implements ISecteurActiviteService{
 	}
 
 	@Override
-	public SecteurActivite addSecteurActivite(SecteurActiviteDTO sa) {
+	public SecteurActivite addSecteurActivite(SecteurActivite sa) {
 		secteurActiviteRepository.save(sa);
 		return sa;
 	}
@@ -35,7 +34,7 @@ public class SecteurActiviteServiceImpl implements ISecteurActiviteService{
 	}
 
 	@Override
-	public SecteurActivite updateSecteurActivite(SecteurActiviteDTO sa) {
+	public SecteurActivite updateSecteurActivite(SecteurActivite sa) {
 		return secteurActiviteRepository.save(sa);
 
 	}

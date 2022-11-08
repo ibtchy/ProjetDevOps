@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.CategorieProduit;
-import tn.esprit.spring.entities.CategorieProduitdto;
 import tn.esprit.spring.services.ICategorieProduitService;
 
 @RestController
@@ -46,7 +45,7 @@ public class CategorieProduitController {
 	// http://localhost:8089/SpringMVC/categorieProduit/add-categorieProduit
 	@PostMapping("/add-categorieProduit")
 	@ResponseBody
-	public CategorieProduit addCategorieProduit(@RequestBody CategorieProduitdto cp) {
+	public CategorieProduit addCategorieProduit(@RequestBody CategorieProduit cp) {
 		return categorieProduitService.addCategorieProduit(cp);
 
 	}
@@ -61,7 +60,7 @@ public class CategorieProduitController {
 	// http://localhost:8089/SpringMVC/categorieProduit/modify-categorieProduit
 	@PutMapping("/modify-categorieProduit")
 	@ResponseBody
-	public CategorieProduit modifyCategorieProduit(@RequestBody CategorieProduitdto categorieProduit) {
+	public CategorieProduit modifyCategorieProduit(@RequestBody CategorieProduit categorieProduit) {
 		return categorieProduitService.updateCategorieProduit(categorieProduit);
 	}
 

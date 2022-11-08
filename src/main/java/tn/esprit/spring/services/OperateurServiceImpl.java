@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.spring.entities.OperateurDTO;
 import tn.esprit.spring.repositories.OperateurRepository;
 import tn.esprit.spring.entities.Operateur;
  
@@ -21,7 +20,7 @@ public class OperateurServiceImpl implements IOperateurService {
 	}
 
 	@Override
-	public Operateur addOperateur(OperateurDTO o) {
+	public Operateur addOperateur(Operateur o) {
 		operateurRepository.save(o);
 		return o;
 	}
@@ -33,7 +32,7 @@ public class OperateurServiceImpl implements IOperateurService {
 	}
 
 	@Override
-	public Operateur updateOperateur(OperateurDTO o) {
+	public Operateur updateOperateur(Operateur o) {
 		return operateurRepository.save(o);
 
 	}

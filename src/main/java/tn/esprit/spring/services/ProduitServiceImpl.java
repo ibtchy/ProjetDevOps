@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.spring.entities.ProduitDTO;
 import tn.esprit.spring.repositories.CategorieProduitRepository;
 import tn.esprit.spring.repositories.ProduitRepository;
 import tn.esprit.spring.repositories.StockRepository;
@@ -35,7 +34,7 @@ public class ProduitServiceImpl implements IProduitService {
 	}
 
 	@Transactional
-	public Produit addProduit(ProduitDTO p) {
+	public Produit addProduit(Produit p) {
 		produitRepository.save(p);
 		return p;
 	}
@@ -48,7 +47,7 @@ public class ProduitServiceImpl implements IProduitService {
 	}
 
 	@Override
-	public Produit updateProduit(ProduitDTO p) {
+	public Produit updateProduit(Produit p) {
 		return produitRepository.save(p);
 	}
 

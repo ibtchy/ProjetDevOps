@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.spring.entities.StockDTO;
 import tn.esprit.spring.repositories.StockRepository;
 import tn.esprit.spring.entities.Stock;
 
@@ -35,7 +34,7 @@ public class StockServiceImpl implements IStockService {
 	}
 
 	@Override
-	public Stock addStock(StockDTO s) {
+	public Stock addStock(Stock s) {
 
 
 		return stockRepository.save(s);
@@ -68,7 +67,7 @@ public class StockServiceImpl implements IStockService {
 	}
 
 	@Override
-	public Stock updateStock(StockDTO s) {
+	public Stock updateStock(Stock s) {
 
 		return stockRepository.save(s);
 	}

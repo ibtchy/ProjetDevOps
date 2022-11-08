@@ -42,7 +42,7 @@ public class FactureServiceImpl implements IFactureService {
 	}
 
 	
-	public Facture addFacture(FactureDTO f) {
+	public Facture addFacture(Facture f) {
 		return factureRepository.save(f);
 	}
 

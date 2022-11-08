@@ -5,17 +5,16 @@ package tn.esprit.spring.services;
 import java.util.List;
 
 import tn.esprit.spring.entities.Fournisseur;
-import tn.esprit.spring.entities.FournisseurDTO;
 
 public interface IFournisseurService {
 
 	List<Fournisseur> retrieveAllFournisseurs();
 
-	Fournisseur addFournisseur(FournisseurDTO f);
+	Fournisseur addFournisseur(Fournisseur f);
 
 	void deleteFournisseur(Long id);
 
-	Fournisseur updateFournisseur(FournisseurDTO f);
+	Fournisseur updateFournisseur(Fournisseur f);
 
 	Fournisseur retrieveFournisseur(Long id);
 	

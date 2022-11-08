@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.spring.entities.ReglementDTO;
 import tn.esprit.spring.repositories.FactureRepository;
 import tn.esprit.spring.repositories.ReglementRepository;
 import tn.esprit.spring.entities.Reglement;
@@ -25,7 +24,7 @@ public class ReglementServiceImpl implements IReglementService {
 	}
 
 	@Override
-	public Reglement addReglement(ReglementDTO r) {
+	public Reglement addReglement(Reglement r) {
         reglementRepository.save(r);
 		return r;
 	}

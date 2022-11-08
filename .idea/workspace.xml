@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/CategorieProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/CategorieProduitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/FactureRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/FactureRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/FournisseurRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/FournisseurRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/OperateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/OperateurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/ProduitRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/controllers/ProduitRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/FournisseurDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/FournisseurDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/OperateurDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/OperateurDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/ProduitDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/ProduitDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/CategorieProduitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/CategorieProduitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/FactureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/FactureServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/FournisseurServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/FournisseurServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/ICategorieProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/ICategorieProduitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IFactureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IFactureService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IFournisseurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IFournisseurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IOperateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IOperateurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/IProduitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/OperateurServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/OperateurServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/ProduitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/ProduitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/StockServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +61,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2H0XpAJeD9gDNJwW3u3wE6NAaTz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

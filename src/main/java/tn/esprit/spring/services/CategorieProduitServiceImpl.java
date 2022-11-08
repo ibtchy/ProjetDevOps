@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.spring.entities.CategorieProduitdto;
 import tn.esprit.spring.repositories.CategorieProduitRepository;
 import tn.esprit.spring.entities.CategorieProduit;
 
@@ -25,7 +24,7 @@ public class CategorieProduitServiceImpl implements ICategorieProduitService {
 	}
 
 	@Override
-	public CategorieProduit addCategorieProduit(CategorieProduitdto cp) {
+	public CategorieProduit addCategorieProduit(CategorieProduit cp) {
 		categorieProduitRepository.save(cp);
 		return cp;
 	}
@@ -37,7 +36,7 @@ public class CategorieProduitServiceImpl implements ICategorieProduitService {
 	}
 
 	@Override
-	public CategorieProduit updateCategorieProduit(CategorieProduitdto cp) {
+	public CategorieProduit updateCategorieProduit(CategorieProduit cp) {
 		return categorieProduitRepository.save(cp);
 
 	}
