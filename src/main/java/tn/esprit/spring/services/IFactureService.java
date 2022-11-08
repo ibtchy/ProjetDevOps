@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.entities.FactureDTO;
 
 
 public interface IFactureService {
@@ -11,7 +12,7 @@ public interface IFactureService {
 
 	List<Facture> getFacturesByFournisseur(Long idFournisseur);
 
-	Facture addFacture(Facture f);
+	Facture addFacture(FactureDTO f);
 
 	void cancelFacture(Long id);
 

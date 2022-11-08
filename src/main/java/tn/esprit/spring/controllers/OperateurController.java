@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Operateur;
+import tn.esprit.spring.entities.OperateurDTO;
 import tn.esprit.spring.services.IOperateurService;
 
 @RestController
@@ -37,7 +38,7 @@ public class OperateurController {
 	// http://localhost:8089/SpringMVC/operateur/add-operateur
 	@PostMapping("/add-operateur")
 	@ResponseBody
-	public Operateur addOperateur(@RequestBody Operateur op) {
+	public Operateur addOperateur(@RequestBody OperateurDTO op) {
 		 return operateurService.addOperateur(op);
 
 	}
@@ -52,7 +53,7 @@ public class OperateurController {
 	// http://localhost:8089/SpringMVC/operateur/modify-operateur
 	@PutMapping("/modify-operateur")
 	@ResponseBody
-	public Operateur modifyOperateur(@RequestBody Operateur operateur) {
+	public Operateur modifyOperateur(@RequestBody OperateurDTO operateur) {
 		return operateurService.updateOperateur(operateur);
 	}
 

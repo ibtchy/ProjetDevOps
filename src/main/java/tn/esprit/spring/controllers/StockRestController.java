@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Stock;
+import tn.esprit.spring.entities.StockDTO;
 import tn.esprit.spring.services.IStockService;
 
 
@@ -45,7 +46,7 @@ public class StockRestController {
 	// http://localhost:8089/SpringMVC/stock/add-stock
 	@PostMapping("/add-stock")
 	@ResponseBody
-	public Stock addStock(@RequestBody Stock s) {
+	public Stock addStock(@RequestBody StockDTO s) {
 		return stockService.addStock(s);
 
 	}
@@ -60,7 +61,7 @@ public class StockRestController {
 	// http://localhost:8089/SpringMVC/stock/modify-stock
 	@PutMapping("/modify-stock")
 	@ResponseBody
-	public Stock modifyStock(@RequestBody Stock stock) {
+	public Stock modifyStock(@RequestBody StockDTO stock) {
 		return stockService.updateStock(stock);
 	}
 

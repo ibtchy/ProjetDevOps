@@ -3,18 +3,18 @@ package tn.esprit.spring.services;
 import java.util.List;
 
 import tn.esprit.spring.entities.Produit;
-
+import tn.esprit.spring.entities.ProduitDTO;
 
 
 public interface IProduitService {
 
 	List<Produit> retrieveAllProduits();
 
-	Produit addProduit(Produit p);
+	Produit addProduit(ProduitDTO p);
 
 	void deleteProduit(Long id);
 
-	Produit updateProduit(Produit p);
+	Produit updateProduit(ProduitDTO p);
 
 	Produit retrieveProduit(Long id);
 

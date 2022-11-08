@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
+import tn.esprit.spring.entities.FournisseurDTO;
 import tn.esprit.spring.repositories.DetailFournisseurRepository;
 import tn.esprit.spring.repositories.FournisseurRepository;
 import tn.esprit.spring.repositories.ProduitRepository;
@@ -37,7 +38,7 @@ public class FournisseurServiceImpl implements IFournisseurService {
 		return fournisseurs;
 	}
 
-	public Fournisseur addFournisseur(Fournisseur f /* Master */) {
+	public Fournisseur addFournisseur(FournisseurDTO f /* Master */) {
 		DetailFournisseur df = new DetailFournisseur();// Slave
 		df.setDateDebutCollaboration(new Date()); // util
 		// On affecte le "Slave" au "Master"
@@ -52,7 +53,7 @@ public class FournisseurServiceImpl implements IFournisseurService {
 		return df;
 	}
 
-	public Fournisseur updateFournisseur(Fournisseur f) {
+	public Fournisseur updateFournisseur(FournisseurDTO f) {
 		DetailFournisseur df = saveDetailFournisseur(f);
 		f.setDetailFournisseur(df);
 		fournisseurRepository.save(f);

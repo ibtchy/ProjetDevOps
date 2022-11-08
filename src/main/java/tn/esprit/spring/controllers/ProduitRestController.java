@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Produit;
+import tn.esprit.spring.entities.ProduitDTO;
 import tn.esprit.spring.services.IProduitService;
 
 
@@ -41,7 +42,7 @@ public class ProduitRestController {
 
 	@PostMapping("/add-produit")
 	@ResponseBody
-	public Produit addProduit(@RequestBody Produit p) {
+	public Produit addProduit(@RequestBody ProduitDTO p) {
 		return produitService.addProduit(p);
 
 	}
@@ -56,7 +57,7 @@ public class ProduitRestController {
 
 	@PutMapping("/modify-produit")
 	@ResponseBody
-	public Produit modifyProduit(@RequestBody Produit p) {
+	public Produit modifyProduit(@RequestBody ProduitDTO p) {
 		return produitService.updateProduit(p);
 	}
 

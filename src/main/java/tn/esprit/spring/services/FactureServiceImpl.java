@@ -2,7 +2,6 @@ package tn.esprit.spring.services;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,7 +42,7 @@ public class FactureServiceImpl implements IFactureService {
 	}
 
 	
-	public Facture addFacture(Facture f) {
+	public Facture addFacture(FactureDTO f) {
 		return factureRepository.save(f);
 	}
 

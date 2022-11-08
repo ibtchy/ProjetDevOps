@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Fournisseur;
+import tn.esprit.spring.entities.FournisseurDTO;
 import tn.esprit.spring.services.IFournisseurService;
 
 
@@ -45,7 +46,7 @@ public class FournisseurRestController {
 	// http://localhost:8089/SpringMVC/fournisseur/add-fournisseur
 	@PostMapping("/add-fournisseur")
 	@ResponseBody
-	public Fournisseur addFournisseur(@RequestBody Fournisseur f) {
+	public Fournisseur addFournisseur(@RequestBody FournisseurDTO f) {
 		return fournisseurService.addFournisseur(f);
 
 	}
@@ -60,7 +61,7 @@ public class FournisseurRestController {
 	// http://localhost:8089/SpringMVC/fournisseur/modify-fournisseur
 	@PutMapping("/modify-fournisseur")
 	@ResponseBody
-	public Fournisseur modifyFournisseur(@RequestBody Fournisseur fournisseur) {
+	public Fournisseur modifyFournisseur(@RequestBody FournisseurDTO fournisseur) {
 		return fournisseurService.updateFournisseur(fournisseur);
 	}
 

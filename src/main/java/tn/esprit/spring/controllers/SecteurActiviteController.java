@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.SecteurActivite;
+import tn.esprit.spring.entities.SecteurActiviteDTO;
 import tn.esprit.spring.services.ISecteurActiviteService;
 
 @RestController
@@ -39,7 +40,7 @@ public class SecteurActiviteController {
 	// http://localhost:8089/SpringMVC/secteurActivite/add-secteurActivite
 	@PostMapping("/add-secteurActivite")
 	@ResponseBody
-	public SecteurActivite addSecteurActivite(@RequestBody SecteurActivite sa) {
+	public SecteurActivite addSecteurActivite(@RequestBody SecteurActiviteDTO sa) {
 		return secteurActiviteService.addSecteurActivite(sa);
 
 	}
@@ -54,7 +55,7 @@ public class SecteurActiviteController {
 	// http://localhost:8089/SpringMVC/secteurActivite/modify-secteurActivite
 	@PutMapping("/modify-secteurActivite")
 	@ResponseBody
-	public SecteurActivite modifySecteurActivite(@RequestBody SecteurActivite secteurActivite) {
+	public SecteurActivite modifySecteurActivite(@RequestBody SecteurActiviteDTO secteurActivite) {
 		return secteurActiviteService.updateSecteurActivite(secteurActivite);
 	}
 

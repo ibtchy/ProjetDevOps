@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Reglement;
+import tn.esprit.spring.entities.ReglementDTO;
 import tn.esprit.spring.services.IReglementService;
 
 @RestController
@@ -25,7 +26,7 @@ public class ReglementRestController {
     // http://localhost:8089/SpringMVC/reglement/add-reglement
     @PostMapping("/add-reglement")
     @ResponseBody
-    public Reglement addReglement(@RequestBody Reglement r) {
+    public Reglement addReglement(@RequestBody ReglementDTO r) {
        return reglementService.addReglement(r);
 
     }

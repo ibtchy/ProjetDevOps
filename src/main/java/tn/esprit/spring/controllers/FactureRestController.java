@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import io.swagger.annotations.Api;
 import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.entities.FactureDTO;
 import tn.esprit.spring.services.IFactureService;
 
 
@@ -40,7 +41,7 @@ public class FactureRestController {
 
     @PostMapping("/add-facture")
     @ResponseBody
-    public Facture addFacture(@RequestBody Facture f) {
+    public Facture addFacture(@RequestBody FactureDTO f) {
         return factureService.addFacture(f);
 
     }
