@@ -70,12 +70,9 @@ public class StockServiceImpl implements IStockService {
 	@Override
 	public StringBuilder retrieveStatusStock() {
 		StringBuilder finalMessage = new StringBuilder();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		Date now = new Date();
-		String msgDate = sdf.format(now);
 		
-		String newLine = System.getProperty("line.separator");
-		List<Stock> stocksEnRouge = (List<Stock>) stockRepository.retrieveStatusStock();
+		
+		List<Stock> stocksEnRouge =  stockRepository.retrieveStatusStock();
 		for (int i = 0; i < stocksEnRouge.size(); i++) {
 			finalMessage.append(stocksEnRouge.get(i).getLibelleStock()).append(stocksEnRouge.get(i).getQte()).append(stocksEnRouge.get(i).getQteMin()).toString();
 
