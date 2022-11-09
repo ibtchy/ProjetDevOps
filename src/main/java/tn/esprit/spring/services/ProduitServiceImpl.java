@@ -2,7 +2,7 @@ package tn.esprit.spring.services;
 
 
 
-import java.util.Date;
+
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ public class ProduitServiceImpl implements IProduitService {
 		List<Produit> produits = (List<Produit>) produitRepository.findAll();
 		for (Produit produit : produits) {
 			log.info(" Produit : " + produit);
-			//System.out.println(" Produit : " + produit);
+		
 		}
 		return produits;
 	}
@@ -62,7 +62,7 @@ public class ProduitServiceImpl implements IProduitService {
 	@Override
 	public Produit retrieveProduit(Long produitId) {
 		Produit produit = produitRepository.findById(produitId).orElse(null);
-		//log.info("produit :" + produit);
+		
 		return produit;
 	}
 

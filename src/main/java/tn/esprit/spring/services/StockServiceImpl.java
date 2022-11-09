@@ -5,7 +5,7 @@ package tn.esprit.spring.services;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,15 +38,14 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public Stock addStock(Stock s) {
-		// récuperer la date à l'instant t1
-		//Log.info("In method addStock");
+		
 		return stockRepository.save(s);
 		
 	}
 
 	@Override
 	public void deleteStock(Long stockId) {
-		//log.info("In method deleteStock");
+		
 		stockRepository.deleteById(stockId);
 
 	}
@@ -59,13 +58,13 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public Stock retrieveStock(Long stockId) {
-		long start = System.currentTimeMillis();
-	
-		Stock stock = stockRepository.findById(stockId).orElse(null);
-	
-		 long elapsedTime = System.currentTimeMillis() - start;
 		
-		return stock;
+	
+		return stockRepository.findById(stockId).orElse(null);
+	
+		
+		
+	
 	}
 
 	@Override

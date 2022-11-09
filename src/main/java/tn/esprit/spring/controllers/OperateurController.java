@@ -38,8 +38,8 @@ public class OperateurController {
 	@PostMapping("/add-operateur")
 	@ResponseBody
 	public Operateur addOperateur(@RequestBody Operateur op) {
-		Operateur operateur = operateurService.addOperateur(op);
-		return operateur;
+		return operateurService.addOperateur(op);
+	
 	}
 
 	
