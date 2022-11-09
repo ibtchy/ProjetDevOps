@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Implementation-Title: achat
 Implementation-Version: 1.0
 Built-By: oussama
-Implementation-Vendor-Id: tn.esprit
+Implementation-Vendor-Id: tn.esprit.spring
 Build-Jdk: 1.8.0_261
-Implementation-URL: https://spring.io/projects/spring-boot/spring
+Implementation-URL: https://spring.io/projects/spring-boot/achat
 Created-By: Maven Integration for Eclipse
 
