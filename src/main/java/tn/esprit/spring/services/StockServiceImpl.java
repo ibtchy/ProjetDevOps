@@ -43,7 +43,7 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public Stock getStckByid(Long id) {
-		// récuperer la date à l'instant t1
+
 
 
 		return stockRepository.getById(id);

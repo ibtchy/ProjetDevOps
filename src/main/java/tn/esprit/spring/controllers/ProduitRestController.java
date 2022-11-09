@@ -23,7 +23,7 @@ public class ProduitRestController {
 	@Autowired
 	IProduitService produitService;
 
-	// http://localhost:8089/SpringMVC/produit/retrieve-all-produits
+
 	@GetMapping("/retrieve-all-produits")
 	@ResponseBody
 	public List<Produit> getProduits() {
@@ -31,7 +31,7 @@ public class ProduitRestController {
 
 	}
 
-	// http://localhost:8089/SpringMVC/produit/retrieve-produit/8
+
 	@GetMapping("/retrieve-produit/{produit-id}")
 	@ResponseBody
 	public Produit retrieveRayon(@PathVariable("produit-id") Long produitId) {
@@ -66,10 +66,7 @@ public class ProduitRestController {
 		produitService.assignProduitToStock(idProduit, idStock);
 	}
 
-	/*
-	 * Revenu Brut d'un produit (qte * prix unitaire de toutes les lignes du
-	 * detailFacture du produit envoyé en paramètre )
-	 */
+
 
 
 }
