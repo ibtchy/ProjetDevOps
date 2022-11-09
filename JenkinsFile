@@ -41,7 +41,12 @@ pipeline {
          sh 'mvn test -Dtest="tn.esprit.spring.OperateurServiceTest.java"'
          }       
        }   
-        
+        stage('Nexus')
+       {
+         steps{
+         sh 'mvn deploy -DskipTests'
+         }       
+       }    
         
         
         
