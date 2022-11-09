@@ -79,8 +79,8 @@ import tn.esprit.spring.entities.SecteurActivite;
 
  		@Override
  		public void assignSecteurActiviteToFournisseur(Long idSecteurActivite, Long idFournisseur) {
- 			Fournisseur fournisseur = fournisseurRepository.findById(idFournisseur).orElse(new SecteurActivite() );
- 			SecteurActivite secteurActivite = secteurActiviteRepository.findById(idSecteurActivite).orElse(new Fournisseur());
+ 			Fournisseur fournisseur = fournisseurRepository.findById(idFournisseur).orElse( new Fournisseur());
+ 			SecteurActivite secteurActivite = secteurActiviteRepository.findById(idSecteurActivite).orElse(new SecteurActivite());
  	        fournisseur.getSecteurActivites().add(secteurActivite);
  	        fournisseurRepository.save(fournisseur);
  			
