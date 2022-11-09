@@ -10,6 +10,10 @@ pipeline {
                 
             }
         }
+        stage('Maven Clean'){
+            steps {
+                sh 'mvn clean'
+            }
          stage('Maven Version'){
             steps {
                 sh 'mvn -version'
@@ -31,10 +35,10 @@ pipeline {
   -Dsonar.login=b09bb14037a90ad1a004db60a00e66b4a7b8edab'
          }       
        }
-           stage('Test unitaire')
+           stage('JUNIT/MOCKITO')
        {
          steps{
-         sh 'maven test -Dtest="tn.esprit.spring.OperateurServiceTest.java"'
+         sh 'mvn test -Dtest="tn.esprit.spring.OperateurServiceTest.java"'
          }       
        }   
         
