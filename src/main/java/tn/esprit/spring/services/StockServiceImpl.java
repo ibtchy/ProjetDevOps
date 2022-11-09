@@ -2,8 +2,7 @@ package tn.esprit.spring.services;
 
 
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import java.util.List;
 
 
@@ -24,15 +23,14 @@ public class StockServiceImpl implements IStockService {
 
 	@Override
 	public List<Stock> retrieveAllStocks() {
-		// récuperer la date à l'instant t1
+		
 		log.info("In method retrieveAllStocks");
-		List<Stock> stocks = (List<Stock>) stockRepository.findAll();
+		List<Stock> stocks =  stockRepository.findAll();
 		for (Stock stock : stocks) {
 			log.info(" Stock : " + stock);
 		}
 		log.info("out of method retrieveAllStocks");
-		// récuperer la date à l'instant t2
-		// temps execution = t2 - t1
+		
 		return stocks;
 	}
 
