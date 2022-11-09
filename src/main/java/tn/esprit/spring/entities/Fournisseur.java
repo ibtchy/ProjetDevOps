@@ -56,7 +56,7 @@ public class Fournisseur implements Serializable {
 		this.idFournisseur = idFournisseur;
 		this.code = code;
 		this.libelle = libelle;
-		this.categorieFournisseur = ordinaire;
+		
 	
 
 
