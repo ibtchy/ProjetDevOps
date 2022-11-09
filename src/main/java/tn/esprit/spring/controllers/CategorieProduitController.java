@@ -22,6 +22,7 @@ import tn.esprit.spring.services.ICategorieProduitService;
 @RestController
 @Api(tags = "Gestion des categories Produit")
 @RequestMapping("/categorieProduit")
+
 public class CategorieProduitController {
 
 	@Autowired
