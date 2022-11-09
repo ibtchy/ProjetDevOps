@@ -13,7 +13,7 @@ pipeline {
         stage('Maven Clean'){
             steps {
                 sh 'mvn clean'
-            }
+            }}
          stage('Maven Version'){
             steps {
                 sh 'mvn -version'
