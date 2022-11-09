@@ -3,7 +3,7 @@ package tn.esprit.spring.services;
 import java.util.Date;
 
 import java.util.List;
-import java.util.Set;
+
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,11 +14,11 @@ import tn.esprit.repositories.FactureRepository;
 import tn.esprit.repositories.FournisseurRepository;
 import tn.esprit.repositories.OperateurRepository;
 import tn.esprit.repositories.ProduitRepository;
-import tn.esprit.spring.entities.DetailFacture;
+
 import tn.esprit.spring.entities.Facture;
 import tn.esprit.spring.entities.Fournisseur;
 import tn.esprit.spring.entities.Operateur;
-import tn.esprit.spring.entities.Produit;
+
 
 @Service
 @Slf4j

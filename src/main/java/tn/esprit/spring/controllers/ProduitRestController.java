@@ -2,16 +2,16 @@ package tn.esprit.spring.controllers;
 
 
 
-import java.util.Date;
+
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
+
 import org.springframework.web.bind.annotation.*;
 
 
 import io.swagger.annotations.Api;
-import lombok.extern.slf4j.Slf4j;
+
 
 import tn.esprit.spring.entities.Produit;
 import tn.esprit.spring.services.IProduitService;
@@ -21,7 +21,7 @@ import tn.esprit.spring.services.IProduitService;
 @CrossOrigin("*")
 @Api(tags = "Gestion des produits")
 @RequestMapping("/produit")
-@Slf4j
+
 public class ProduitRestController {
 
 	@Autowired
