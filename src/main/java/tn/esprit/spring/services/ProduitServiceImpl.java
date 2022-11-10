@@ -2,7 +2,7 @@ package tn.esprit.spring.services;
 
 
 
-import java.util.Date;
+
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +28,9 @@ public class ProduitServiceImpl implements IProduitService {
 
 	@Override
 	public List<Produit> retrieveAllProduits() {
-		List<Produit> produits = (List<Produit>) produitRepository.findAll();
+		List<Produit> produits = produitRepository.findAll();
 		for (Produit produit : produits) {
-			//log.info(" Produit : " + produit);
+
 		}
 		return produits;
 	}
@@ -55,15 +55,15 @@ public class ProduitServiceImpl implements IProduitService {
 
 	@Override
 	public Produit retrieveProduit(Long produitId) {
-		Produit produit = produitRepository.findById(produitId).orElse(null);
-		//log.info("produit :" + produit);
-		return produit;
+		return produitRepository.findById(produitId).orElse(null);
+
+		
 	}
 
 	@Override
 	public void assignProduitToStock(Long idProduit, Long idStock) {
-		Produit produit = produitRepository.findById(idProduit).orElse(null);
-		Stock stock = stockRepository.findById(idStock).orElse(null);
+		Produit produit = produitRepository.findById(idProduit).orElse(new Produit());
+		Stock stock = stockRepository.findById(idStock).orElse(new Stock());
 		produit.setStock(stock);
 		produitRepository.save(produit);
 

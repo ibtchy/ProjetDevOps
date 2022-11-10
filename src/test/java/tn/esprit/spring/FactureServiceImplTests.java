@@ -15,11 +15,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+
 import lombok.extern.slf4j.Slf4j;
 import tn.esprit.spring.entities.Facture;
 import tn.esprit.spring.repositories.FactureRepository;
@@ -32,26 +31,6 @@ import static org.junit.Assert.assertNotNull;
 @SpringBootTest //(classes=ProduitServiceImpl.class)
 
 public class FactureServiceImplTests {
-	/*
-	private static final Logger l = (Logger) LogManager.getLogger(FactureServiceImplTests.class);
-
-	@Autowired
-	FactureServiceImpl es;
-	
-	@Autowired
-	FactureRepository er;
-	@Test
-	public void testAddFacture() {
-		try {
-		Facture E = new Facture(2,7);
-		assertNotNull(E.getIdFacture());
-		es.deleteFr(E);
-		l.info("Add Facture works");
-		} catch (NullPointerException e) {
-			l.error(e.getMessage());
-		}
-	}
-	*/
 	
 	@Mock
 	FactureRepository factureRepository ;
