@@ -60,9 +60,6 @@ public class StockServiceImpl implements IStockService {
 	
 		return stockRepository.findById(stockId).orElse(null);
 	
-		
-		
-	
 	}
 
 	@Override
