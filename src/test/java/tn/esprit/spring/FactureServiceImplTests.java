@@ -2,6 +2,7 @@
 package tn.esprit.spring;
 
 import static org.junit.Assert.assertEquals;
+
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -20,8 +21,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.repositories.FactureRepository;
 import tn.esprit.spring.entities.Facture;
+import tn.esprit.spring.repositories.FactureRepository;
 import tn.esprit.spring.services.FactureServiceImpl;
 import static org.junit.Assert.assertNotNull;
 

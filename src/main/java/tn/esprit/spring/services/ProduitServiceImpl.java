@@ -9,11 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tn.esprit.repositories.CategorieProduitRepository;
-import tn.esprit.repositories.ProduitRepository;
-import tn.esprit.repositories.StockRepository;
 import tn.esprit.spring.entities.Produit;
 import tn.esprit.spring.entities.Stock;
+import tn.esprit.spring.repositories.CategorieProduitRepository;
+import tn.esprit.spring.repositories.ProduitRepository;
+import tn.esprit.spring.repositories.StockRepository;
 
 @Service
 @Slf4j

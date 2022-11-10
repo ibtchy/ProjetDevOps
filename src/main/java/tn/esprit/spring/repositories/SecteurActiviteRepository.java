@@ -1,4 +1,4 @@
-package tn.esprit.repositories;
+package tn.esprit.spring.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

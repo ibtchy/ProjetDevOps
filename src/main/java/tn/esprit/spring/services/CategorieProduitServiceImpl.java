@@ -3,11 +3,12 @@ package tn.esprit.spring.services;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.repositories.CategorieProduitRepository;
 import tn.esprit.spring.entities.CategorieProduit;
+import tn.esprit.spring.repositories.CategorieProduitRepository;
 
 
 @Service
