@@ -35,8 +35,7 @@ pipeline {
 
         stage ('Nexus'){
                 steps{
-                  nexusArtifactUploader
-                  credentialsId: '2bf65efe-65ea-4ecb-a4f6-a1f4b217c32f', groupId: 'tn.esprit.spring', nexusUrl: 'http://192.168.1.9:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.0-SNAPSHOT'
+                sh 'mvn deploy -e'
                 }
         }
 
