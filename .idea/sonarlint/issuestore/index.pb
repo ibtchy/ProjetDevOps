@@ -57,8 +57,6 @@ l
 <src/main/java/tn/esprit/spring/services/IProduitService.java,9\6\963a431c80e6d59bdbbce063a3d2e3724499988e
 n
 >src/main/java/tn/esprit/spring/services/IReglementService.java,4\a\4a064b4a42b705af9e63abb734e3fe64b90cd4d9
-e
-5src/main/java/tn/esprit/spring/entities/StockDTO.java,9\b\9b92e40b47aa77a7ee78b6ab91a2089a59b08c55
 u
 Esrc/main/java/tn/esprit/spring/controllers/FactureRestController.java,c\2\c2bb0fd9afdcacd463314ec97d21c3018d9aafaa
 y
@@ -77,3 +75,11 @@ s
 Csrc/main/java/tn/esprit/spring/controllers/StockRestController.java,1\0\10a466139bc33a9296fa937767bb4cbd9b635540
 u
 Esrc/main/java/tn/esprit/spring/services/ICategorieProduitService.java,8\d\8d7a03a831eb0af1d3b4c97c6d43393625d26cd6
+l
+<src/main/java/tn/esprit/spring/services/IFactureService.java,9\c\9c4242766c892883ed360cf9d2d1e9e59ab80f9f
+p
+@src/main/java/tn/esprit/spring/services/IFournisseurService.java,f\c\fc7e3698acdb27bd5a709627e046b24a09684031
+n
+>src/main/java/tn/esprit/spring/services/IOperateurService.java,7\4\74a93c9603d8622941847457b42d0932e65181bb
+q
+Asrc/main/java/tn/esprit/spring/services/OperateurServiceImpl.java,6\f\6fa96d6cde580e83075019c46547ddebcef2d26f
