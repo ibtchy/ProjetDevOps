@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/StockServiceImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,8 +102,8 @@
     <option name="myCommands">
       <command value="mvn compile" />
       <command value="mvn package" />
-      <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn clean" />
     </option>
   </component>
   <component name="RunManager" selected="Application.ProjectAchatApplication">
