@@ -1,4 +1,4 @@
-package tn.esprit.spring.services;
+package tn.esprit.spring;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
@@ -17,6 +17,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.spring.entities.Stock;
 import tn.esprit.spring.repositories.StockRepository;
+import tn.esprit.spring.services.StockServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
