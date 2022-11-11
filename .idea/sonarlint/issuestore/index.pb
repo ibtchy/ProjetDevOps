@@ -25,8 +25,6 @@ m
 =src/main/java/tn/esprit/spring/entities/CategorieProduit.java,a\0\a0eed4b0c2a47bbae865b33ecf38352d51ceffcd
 p
 @src/main/java/tn/esprit/spring/repositories/StockRepository.java,a\b\ab804668767031fcfa1752be60faf3142da3ddda
-p
-@src/test/java/tn/esprit/spring/ProjectAchatApplicationTests.java,e\4\e4b042cc05aa24d7d048fc5710451c1c2ed3e5d1
 d
 4src/main/java/tn/esprit/spring/entities/Facture.java,6\2\62163ce01fb14d955d55eed8c066c91d0485020d
 h
