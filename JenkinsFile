@@ -10,22 +10,13 @@ pipeline {
                git branch: 'salma', credentialsId: 'jenkinks_cred', url: 'https://github.com/ibtchy/ProjetDevOps.git'
             }
         }
-        stage ('mvn Version'){
-            steps {
-                 sh 'mvn -version'
-            }
-        }
+
          stage ('mvn Compile'){
             steps {
                  sh 'mvn compile -e'
             }
         }
-        
-        stage('Package') {
-        steps {
-        sh('mvn clean package -DskipTests')
-         }
-        }
+
 
         stage ('test'){
         steps{
