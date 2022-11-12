@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
-      <change beforePath="$PROJECT_DIR$/JenkinsFile" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/FactureServiceTestMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/StockServicelmplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StockServicelmplTest.testaddStock">
+  <component name="RunManager" selected="JUnit.FactureServiceTestMock">
     <configuration name="ProjectAchatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.ProjectAchatApplication" />
       <module name="ProjectAchat" />
@@ -119,6 +120,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactureServiceTestMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectAchat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.spring.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tn.esprit.spring.services" />
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.services.FactureServiceTestMock" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,21 +149,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="tn.esprit.spring.services" />
       <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.services.StockServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectAchat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tn.esprit.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tn.esprit.spring" />
-      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.StockServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FactureServiceTestMock" />
         <item itemvalue="JUnit.StockServicelmplTest.testaddStock" />
         <item itemvalue="JUnit.StockServicelmplTest" />
         <item itemvalue="JUnit.StockServiceImplTest (1)" />
         <item itemvalue="Application.ProjectAchatApplication" />
-        <item itemvalue="JUnit.StockServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
