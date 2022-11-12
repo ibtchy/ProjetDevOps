@@ -1,10 +1,8 @@
 package tn.esprit.spring.services;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-
-
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -12,6 +10,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.internal.junit.JUnitTestRule;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,10 +31,11 @@ import static org.mockito.Mockito.*;
 
 
 
-@RunWith(SpringRunner.class)
+//@RunWith(SpringRunner.class)
 //@ExtendWith(MockitoExtension.class)
 @SpringBootTest
-public class StockServiceImplTest {
+@RunWith(MockitoJUnitRunner.class)
+class StockServiceImplTest {
 
     @InjectMocks
     private StockServiceImpl stockservice;
@@ -45,7 +45,7 @@ public class StockServiceImplTest {
 
 
     @Test
-     public void getStockTest() {
+     void getStockTest() {
 
         when(sr.findAll()).thenReturn(Stream
                 .of(new Stock("epuise", 4 , 5), new Stock("test",6,8)).collect(Collectors.toList()));
@@ -53,7 +53,7 @@ public class StockServiceImplTest {
     }
 
     @Test
-    public void addStockTest() {
+    void addStockTest() {
         Stock s = new Stock("epuise", 4 , 5);
         when(sr.save(s)).thenReturn(s);
         assertEquals(s, stockservice.addStock(s));
@@ -61,7 +61,7 @@ public class StockServiceImplTest {
 
 
     @Test
-    public void deleteStockTest() {
+    void deleteStockTest() {
         Stock s = new Stock("aaa", 66 , 55);
         stockservice.deleteStock(s);
         verify(sr, times(1)).delete(s);
