@@ -54,6 +54,7 @@ public class StockServicelmplTest {
         List<Stock> stockList3 = stockService.retrieveAllStocks();
         assertEquals(3, stockList3.size());
         //assertEquals(stock1.,55L);
+        System.out.println("stockkkkk");
     }
 
     @Test
@@ -63,6 +64,8 @@ public class StockServicelmplTest {
         Stock stock1 = stockService.addStock(s1);
         assertNotNull(stock1);
         Mockito.verify(stockRepository, times(1)).save(Mockito.any(Stock.class));
+        System.out.println("stock");
+
     }
 
 
