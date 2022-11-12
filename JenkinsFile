@@ -18,11 +18,11 @@ pipeline {
         }
 
 
-       /* stage ('test'){
+        stage ('test'){
         steps{
-            sh  'mvn test'
+            sh  'mvn test -Dtest="tn.esprit.spring.services.StockServicelmplTest.java"'
         }
-        }*/
+        }
 
 
        /* stage("SonarQube"){
