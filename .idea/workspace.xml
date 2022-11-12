@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProjectAchat-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjectAchat-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProjectAchat-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjectAchat-0.0.1.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -110,7 +108,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProjectAchatApplication">
+  <component name="RunManager" selected="JUnit.StockServiceImplTest (1)">
     <configuration name="ProjectAchatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.ProjectAchatApplication" />
       <module name="ProjectAchat" />
@@ -120,6 +118,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectAchat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.spring.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tn.esprit.spring.services" />
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.services.StockServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,29 +184,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockServiceImplTest.retrieveStockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectAchat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tn.esprit.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tn.esprit.spring" />
-      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.StockServiceImplTest" />
-      <option name="METHOD_NAME" value="retrieveStockTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StockServiceImplTest (1)" />
         <item itemvalue="Application.ProjectAchatApplication" />
         <item itemvalue="JUnit.StockServiceImplTest" />
         <item itemvalue="JUnit.StockServiceImplTest.getStockTest" />
         <item itemvalue="JUnit.StockServiceImplTest.deleteStockTest" />
-        <item itemvalue="JUnit.StockServiceImplTest.retrieveStockTest" />
       </list>
     </recent_temporary>
   </component>
