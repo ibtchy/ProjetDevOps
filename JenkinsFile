@@ -20,7 +20,7 @@ pipeline {
 
         stage ('test'){
         steps{
-            sh  'mvn test -Dtest="tn.esprit.spring.services.StockServiceImplTest.java"'
+            sh  'mvn test '
         }
         }
 
