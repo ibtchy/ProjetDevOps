@@ -11,6 +11,7 @@
 	<artifactId>ProjectAchat</artifactId>
 	<version>1.0</version>
 	<name>ProjectAchat</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
