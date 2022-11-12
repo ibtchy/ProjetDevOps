@@ -20,7 +20,7 @@ pipeline {
 
         stage ('test'){
         steps{
-            sh  'mvn test -DskipTests="tn.esprit.spring.services.StockServicelmplTest.java"'
+            sh  'mvn test -DskipTests="tn.esprit.spring.services.FactureServiceTestMock.java"'
         }
         }
 
