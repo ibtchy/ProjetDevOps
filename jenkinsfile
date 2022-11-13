@@ -52,7 +52,7 @@ environment {
         stage('Docker img build') {
                  steps {
                         script {
-                            dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                            dockerImage = docker.build registry + ":latest"
                         }
                     }
         }
@@ -60,23 +60,6 @@ environment {
 
 
 
-         stage('Img Deploy') {
-                  steps {
-                        script {
-                            docker.withRegistry( '', registryCredential ){
-
-                            dockerImage.push()
-                            }
-                        }
-
-                    }
-                }
-
-         stage('clean') {
-                steps {
-                        sh "docker rmi $registry:$BUILD_NUMBER"
-                }
-                }
-
+         
         }
 }
