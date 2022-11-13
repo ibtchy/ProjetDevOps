@@ -1,6 +1,6 @@
 pipeline {
 environment {
-            registry = "mahdihmida/projectachat"
+            registry = "mahdihmida/devops"
             registryCredential = 'creddocker'
             dockerImage = ''
     }
