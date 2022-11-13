@@ -36,11 +36,11 @@ pipeline {
             }
         } 
         
-          stage('test'){
-            steps {
-                sh 'mvn test'
-            }
-        } 
+        stage ('test'){
+        steps{
+            sh 'mvn test -Dtest="tn.esprit.spring.services.ProduitServiceImplTests.java"'
+        }
+        }
        
        /*  stage("sonar"){
         steps {
