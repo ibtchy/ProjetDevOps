@@ -24,18 +24,18 @@ pipeline {
                 sh 'mvn compile -e'
             }
         }
-      
+        stage('package'){
+            steps {
+                sh 'mvn clean package -DskipTests'
+            }
+        }
         
         stage ('test'){
         steps{
             sh 'mvn test -Dtest="tn.esprit.spring.ProduitServiceImplTests.java"'
         }
         }
-        stage('package'){
-            steps {
-                sh 'mvn clean package -DskipTests'
-            }
-        }
+      
        
         /* stage("sonar"){
         steps {
