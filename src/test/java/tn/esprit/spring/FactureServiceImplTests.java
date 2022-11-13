@@ -1,12 +1,11 @@
 
 package tn.esprit.spring;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-
+import org.springframework.boot.test.context.SpringBootTest;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,6 +16,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -27,8 +27,8 @@ import static org.junit.Assert.assertNotNull;
 
 @Slf4j
 //@ExtendWith(MockitoExtension.class)
-@RunWith(SpringRunner.class)
 @SpringBootTest //(classes=ProduitServiceImpl.class)
+@RunWith(MockitoJUnitRunner.class)
 
 public class FactureServiceImplTests {
 	
