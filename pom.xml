@@ -11,7 +11,6 @@
 	<artifactId>ProjectAchat</artifactId>
 	<version>1.0</version>
 	<name>ProjectAchat</name>
-	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -175,7 +174,7 @@
 	<repository>
 	<id>deploymentRepo</id>
 	<name>admin</name>
-	<url>http://192.168.1.43:8081/repository/maven-releases/</url>
+	<url>http://192.168.1.41:8081/repository/maven-releases/</url>
 	</repository>
 	</distributionManagement>
 
