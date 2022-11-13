@@ -31,5 +31,18 @@ pipeline {
             sh 'mvn test -Dtest="tn.esprit.spring.FactureServiceImplTests.java"'
         }
         }
+        /*stage("SonarQube"){
+        steps {
+                withSonarQubeEnv ( installationName: 'sonar'){
+                sh 'mvn sonar:sonar'
+                }
+        }
+        } */
+        stage("Nexus") {
+            steps {
+                
+                sh "mvn deploy -DskipTests "
+            }
+        }
         }
 }
