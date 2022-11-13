@@ -43,7 +43,7 @@ echo "compiling"
 
 sh 'mvn sonar:sonar \
   -Dsonar.projectKey=cherif \
-  -Dsonar.host.url=http://192.168.1.17:9000 \
+  -Dsonar.host.url=http://192.168.1.103:9000 \
   -Dsonar.login=9d66d4969f42b1eec0aae07666bca11b1a30749e'
 
  
