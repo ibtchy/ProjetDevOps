@@ -2,7 +2,7 @@
 pipeline {
 
      environment {
-            registry = "salma2705"
+            registry = "salma2705/projetachat"
             registryCredential = 'dockerhubId'
             dockerImage = ''
 
