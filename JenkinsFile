@@ -1,7 +1,12 @@
 
 pipeline {
     agent any
-    
+    /* environment {
+            registry = "salma2705"
+            registryCredential = 'dockerhubId'
+            dockerImage = ''
+
+     }*/
    
     stages {
         stage('Checkout GIT') {
@@ -40,6 +45,34 @@ pipeline {
 
                 }
         }
+
+
+        //docker build
+       /* stage('Docker image build') {
+                 steps {
+                        script {
+                            dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                        }
+                    }
+                }
+
+         stage('Image Deploy') {
+                  steps {
+                        script {
+                            docker.withRegistry( '', registryCredential ) {
+                            dockerImage.push()
+                        }
+                       }
+                    }
+                }
+
+         stage('clean') {
+                steps {
+                        sh "docker rmi $registry:$BUILD_NUMBER"
+                }
+                }
+
+            }*/
 
     }
 }

@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce47c776-878e-43b3-baa8-18356c385465" name="Changes" comment="unit tests comment">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/StockServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce405fb41ceb8572c7b1147fd3bcd295a1a6c9e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JenkinsFile" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/FactureServiceTestMock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/services/FactureServiceTestMock.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +115,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FactureServiceTestMock">
+  <component name="RunManager" selected="Application.ProjectAchatApplication">
     <configuration name="ProjectAchatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.ProjectAchatApplication" />
       <module name="ProjectAchat" />
@@ -186,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProjectAchatApplication" />
+        <item itemvalue="JUnit.StockServiceImplTest (1)" />
         <item itemvalue="JUnit.FactureServiceTestMock" />
         <item itemvalue="JUnit.StockServicelmplTest.testaddStock" />
         <item itemvalue="JUnit.StockServicelmplTest" />
-        <item itemvalue="JUnit.StockServiceImplTest (1)" />
-        <item itemvalue="Application.ProjectAchatApplication" />
       </list>
     </recent_temporary>
   </component>

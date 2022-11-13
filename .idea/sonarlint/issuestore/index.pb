@@ -1,6 +1,4 @@
 
-h
-8src/main/java/tn/esprit/spring/config/SwaggerConfig.java,c\e\ce405fb41ceb8572c7b1147fd3bcd295a1a6c9e7
 {
 Ksrc/main/java/tn/esprit/spring/repositories/CategorieProduitRepository.java,4\3\43bec079231a2a887141475888bf476eacfa2ca9
 r
