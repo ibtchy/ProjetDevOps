@@ -43,13 +43,13 @@ pipeline {
             }
         }
        
-        /* stage("sonar"){
+         stage("sonar"){
         steps {
                 withSonarQubeEnv ( installationName: 'SonarQube'){
                 sh 'mvn sonar:sonar'
                 }
         }
-        }  */
+        }  
         
         stage ('Nexus'){
                 steps{
