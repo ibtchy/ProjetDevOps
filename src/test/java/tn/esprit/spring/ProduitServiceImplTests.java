@@ -2,6 +2,7 @@ package tn.esprit.spring;
 
 import static org.junit.Assert.assertEquals;
 
+
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -28,9 +29,26 @@ import tn.esprit.repositories.ProduitRepository;
 import tn.esprit.spring.entities.Produit;
 import tn.esprit.spring.services.ProduitServiceImpl;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.Test;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.runner.RunWith;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import org.mockito.junit.MockitoJUnitRunner;
 //@ExtendWith(MockitoExtension.class)
-@RunWith(SpringRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 @SpringBootTest //(classes=ProduitServiceImpl.class)
 public class ProduitServiceImplTests {
 	@Mock
