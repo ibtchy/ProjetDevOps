@@ -34,22 +34,18 @@ echo "compiling"
                
             }
         }
-        stage('Code Quality Check via SonarQube') {
-             
-             
-            steps {
+       
                
-sh'
-mvn sonar:sonar \
+        stage('Code Quality Check via SonarQube')
+       {
+         steps{
+         sh 'mvn sonar:sonar \
   -Dsonar.projectKey=cherif1 \
   -Dsonar.host.url=http://192.168.1.103:9000 \
   -Dsonar.login=7ad62d5290f6a218147913cfcb1127bb264b9a3c'
-
- 
-}
-               
-            
-        }
+         }       
+       }
+       
         stage ('Test Unitaire')
         {
         steps {
