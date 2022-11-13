@@ -27,7 +27,7 @@ pipeline {
                     }
         }
 
-        stage ('Test MOCKITO'){
+        stage ('test'){
         steps{
             sh 'mvn test -Dtest="tn.esprit.spring.services.StockServiceImplTest.java"'
         }
@@ -51,7 +51,7 @@ pipeline {
         }
 
 
-
+        //docker build
         stage('Docker image build') {
                  steps {
                         script {
@@ -61,7 +61,7 @@ pipeline {
         }
 
 
-
+        
 
          stage('Image Deploy') {
                   steps {
@@ -79,8 +79,7 @@ pipeline {
                 }
                 }
 
-           }
-         }
+            }
 
     }
 }
