@@ -81,6 +81,16 @@ pipeline {
                         sh "docker rmi $registry:$BUILD_NUMBER"
                 }
                 }
+                
+        stage('DockerCompose'){
+
+        steps {
+
+        sh "docker-compose up -d"
+
+        }
+
+        }
         
     }
 }
