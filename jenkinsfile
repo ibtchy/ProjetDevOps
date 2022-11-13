@@ -64,6 +64,23 @@ pipeline {
                         }
                     }
         }
+        stage('Deploy img') {
+                  steps {
+                        script {
+                            docker.withRegistry( '', registryCredential ){
+
+                            dockerImage.push()
+                            }
+                        }
+
+                    }
+                }
+
+         stage('clean') {
+                steps {
+                        sh "docker rmi $registry:$BUILD_NUMBER"
+                }
+                }
         
     }
 }
