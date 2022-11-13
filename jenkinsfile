@@ -1,7 +1,11 @@
 pipeline {
     agent any
     
- 
+ environment {
+            registry = "ibtchy/projetdevops"
+            registryCredential = 'docker'
+            dockerImage = ''
+    }
         
     stages {
         stage('Checkout GIT') {
