@@ -56,7 +56,24 @@ environment {
                         }
                     }
         }
+       
+        stage('Image Deploy') {
+                  steps {
+                        script {
+                            docker.withRegistry( '', registryCredential ){
 
+                            dockerImage.push()
+                            }
+                        }
+
+                    }
+                }
+
+         stage('clean') {
+                steps {
+                        sh "docker rmi $registry:$BUILD_NUMBER"
+                }
+                }
 
 
 
