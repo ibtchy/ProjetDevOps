@@ -28,7 +28,7 @@ pipeline {
         } 
         stage ('test'){
         steps{
-            sh 'mvn test -Dtest="tn.esprit.spring.services.FactureServiceImplTests.java"'
+            sh 'mvn test -Dtest="tn.esprit.spring.FactureServiceImplTests.java"'
         }
         }
         }
