@@ -1,13 +1,13 @@
 pipeline {
     agent any
     
-  environment {
+ /* environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "192.168.1.14:8081"
         NEXUS_REPOSITORY = "maven-releases"
         NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
-    }
+    }*/
         
     stages {
         stage('Checkout GIT') {
@@ -50,18 +50,18 @@ pipeline {
         }
         }  */
         
-       /* stage ('Nexus'){
+        stage ('Nexus'){
                 steps{
                     sh 'mvn deploy -DskipTests'
 
                 }
-        }*/
+        }
       /*  stage ('NEXUS DEPLOY') {
                      steps {
                          sh 'mvn clean package deploy:deploy-file -DgroupId=tn.esprit.spring -DartifactId=tpAchatProject -Dversion=1.0 -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://192.168.1.14:8081/repository/maven-releases/ -Dfile=target/tpAchatProject-1.0.jar -DskipTests'
                      }
                  }*/
-                 stage("Publish to Nexus Repository Manager") {
+              /*   stage("Publish to Nexus Repository Manager") {
             steps {
                 script {
                     pom = readMavenPom file: "pom.xml";
@@ -97,7 +97,7 @@ pipeline {
             }
         }
        
-        
+        */
        
         
         
