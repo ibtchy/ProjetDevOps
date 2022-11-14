@@ -41,30 +41,30 @@ pipeline {
         }
       
        
-      /*  stage("sonar"){
+       stage("sonar"){
         steps {
                 withSonarQubeEnv ( installationName: 'SonarQube'){
                 sh 'mvn sonar:sonar'
                 }
         }
-        }  */
+        }  
         
-       stage ('Nexus'){
+/*stage ('Nexus'){
                 steps{
                     sh 'mvn deploy -DskipTests'
 
                 }
-        }
+        }*/
       
         
-        stage('build img') {
+       /* stage('build img') {
                  steps {
                         script {
                             dockerImage = docker.build registry + ":$BUILD_NUMBER"
                         }
                     }
-        }
-        stage('Deploy img') {
+        }*/
+       /* stage('Deploy img') {
                   steps {
                         script {
                             docker.withRegistry( '', registryCredential ){
@@ -74,15 +74,15 @@ pipeline {
                         }
 
                     }
-                }
+                }*/
 
-         stage('clean') {
+        /* stage('clean') {
                 steps {
                         sh "docker rmi $registry:$BUILD_NUMBER"
                 }
-                }
+                }*/
                 
-        stage('DockerCompose'){
+      /*  stage('DockerCompose'){
 
         steps {
 
@@ -90,7 +90,7 @@ pipeline {
 
         }
 
-        }
+        }*/
         
     }
 }
